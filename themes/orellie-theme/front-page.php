@@ -22,7 +22,7 @@ get_header();
     muted 
     playsinline 
     poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
-    <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4' ); ?>" type="video/mp4">
+    <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=2' ); ?>" type="video/mp4">
   </video>
   
   <!-- Overlay to ensure text readability -->
