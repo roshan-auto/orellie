@@ -22,6 +22,7 @@ get_header();
     muted 
     playsinline 
     poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
+    <!-- Dynamic Cache Buster v3 applied for Hostinger Auto-Deploy -->
     <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
   </video>
   
