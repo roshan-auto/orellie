@@ -15,44 +15,46 @@ get_header();
      ═══════════════════════════════════════════════ -->
 <section class="video-hero">
   <div class="container video-hero__container">
-    <!-- Text Content on the left -->
-    <div class="video-hero__content">
-      <div class="badge video-hero__badge animate-fadeInUp">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
-        The Aura Collection
+    <!-- Badge: Full Width Top -->
+    <div class="badge video-hero__badge animate-fadeInUp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+      The Aura Collection
+    </div>
+
+    <!-- Split Section: Title/Desc (Left) + Video (Right) -->
+    <div class="video-hero__split">
+      <div class="video-hero__content">
+        <h1 class="animate-fadeInUp animate-fadeInUp-delay-1">
+          Express your inner <br>
+          <span class="accent">radiance.</span>
+        </h1>
+
+        <p class="video-hero__desc animate-fadeInUp animate-fadeInUp-delay-2">
+          Handcrafted luxury earrings designed to turn heads without weighing you down.
+        </p>
       </div>
 
-      <!-- User requested text mapping from the screenshot -->
-      <h1 class="animate-fadeInUp animate-fadeInUp-delay-1">
-        Express your inner <br>
-        <span class="accent">radiance.</span>
-      </h1>
-
-      <p class="video-hero__desc animate-fadeInUp animate-fadeInUp-delay-2">
-        Handcrafted luxury earrings designed to turn heads without weighing you down. Experience the perfect blend of bold aesthetics and delicate craftsmanship.
-      </p>
-
-      <div class="hero__buttons animate-fadeInUp animate-fadeInUp-delay-3">
-        <?php if ( class_exists( 'WooCommerce' ) ) : ?>
-          <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="btn btn-primary btn-lg">
-            Shop the Collection
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        <?php endif; ?>
-        <a href="#features" class="btn btn-outline btn-lg">Explore Styles</a>
+      <div class="video-hero__media animate-fadeInUp animate-fadeInUp-delay-3">
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
+          <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
+        </video>
       </div>
     </div>
 
-    <!-- Video Content on the right -->
-    <div class="video-hero__media animate-fadeInUp animate-fadeInUp-delay-4">
-      <video 
-        autoplay 
-        loop 
-        muted 
-        playsinline 
-        poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
-        <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
-      </video>
+    <!-- Buttons: Full Width Bottom -->
+    <div class="hero__buttons animate-fadeInUp animate-fadeInUp-delay-4">
+      <?php if ( class_exists( 'WooCommerce' ) ) : ?>
+        <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="btn btn-primary btn-lg">
+          Shop the Collection
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      <?php endif; ?>
+      <a href="#features" class="btn btn-outline btn-lg">Explore Styles</a>
     </div>
   </div>
 </section>
