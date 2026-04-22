@@ -159,6 +159,39 @@ function orellie_get_part( $slug, $name = null ) {
 }
 
 /* ────────────────────────────────────────────────
-   6. Custom Includes
+   6. Development Interceptor (Local Visibility)
+   ──────────────────────────────────────────────── */
+
+/**
+ * Intercept help page requests to show templates even if pages aren't in the DB.
+ * This is for local development visibility.
+ */
+function orellie_intercept_help_pages() {
+	if ( is_admin() ) return;
+
+	$request_uri = $_SERVER['REQUEST_URI'];
+	$slugs = array(
+		'shipping-delivery',
+		'returns-exchanges',
+		'jewellery-care',
+		'orders',
+		'privacy-policy',
+		'terms-of-use'
+	);
+
+	foreach ( $slugs as $slug ) {
+		if ( strpos( $request_uri, '/' . $slug ) !== false ) {
+			$template = get_template_directory() . '/page-' . $slug . '.php';
+			if ( file_exists( $template ) ) {
+				include $template;
+				exit;
+			}
+		}
+	}
+}
+add_action( 'template_redirect', 'orellie_intercept_help_pages', 5 );
+
+/* ────────────────────────────────────────────────
+   7. Custom Includes
    ──────────────────────────────────────────────── */
 require get_template_directory() . '/inc/custom-meta.php';
