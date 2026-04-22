@@ -24,23 +24,23 @@
 
       <!-- Help links -->
       <div class="footer-links">
-        <h4>Help</h4>
+        <h4>Customer Care</h4>
         <ul>
-          <li><a href="#">Shipping & Delivery</a></li>
-          <li><a href="#">Returns & Exchanges</a></li>
-          <li><a href="#">Care Instructions</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/shipping-delivery/' ) ); ?>">Shipping & Delivery</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/returns-exchanges/' ) ); ?>">Returns & Exchanges</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/orders/' ) ); ?>">Orders & Tracking</a></li>
         </ul>
       </div>
 
-      <!-- About links -->
+      <!-- Legal links -->
       <div class="footer-links">
-        <h4>Orellie</h4>
+        <h4>The Studio</h4>
         <ul>
           <li><a href="#">Our Story</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/terms-of-use/' ) ); ?>">Terms of Use</a></li>
         </ul>
       </div>
 

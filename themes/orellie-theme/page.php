@@ -7,17 +7,27 @@
 
 get_header(); ?>
 
-<div class="container" style="padding-top: 6rem; padding-bottom: 4rem;">
+<main class="site-main">
   <?php while ( have_posts() ) : the_post(); ?>
-    <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-      <h1 style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 2rem;">
-        <?php the_title(); ?>
-      </h1>
-      <div class="entry-content">
-        <?php the_content(); ?>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__content">
+          <h1 class="page-title animate-fadeInUp">
+            <?php the_title(); ?>
+          </h1>
+          <div class="page-header__line animate-fadeInUp-delay-1"></div>
+        </div>
       </div>
-    </article>
+    </header>
+
+    <div class="container">
+      <article id="page-<?php the_ID(); ?>" <?php post_class('page-content animate-fadeInUp-delay-2'); ?>>
+        <div class="entry-content">
+          <?php the_content(); ?>
+        </div>
+      </article>
+    </div>
   <?php endwhile; ?>
-</div>
+</main>
 
 <?php get_footer(); ?>
