@@ -446,8 +446,10 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  object-position: 85% center; /* Focus on the earring which is on the right */
   z-index: -2;
 }
+
 
 .video-hero__overlay {
   position: absolute;
@@ -522,6 +524,10 @@ h1, h2, h3, h4, h5, h6 {
   .video-hero {
     min-height: 95vh; /* Taller on desktop */
   }
+  .video-hero__bg {
+    object-position: center;
+  }
+
   .video-hero__content {
     max-width: 600px;
     padding-left: 2rem; /* Give it a little breathing room from the edge */
