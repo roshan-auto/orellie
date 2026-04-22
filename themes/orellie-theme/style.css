@@ -505,14 +505,14 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 100% center;
+  object-position: 50% center;
   /* Push model/face to the absolute right edge */
 }
 
 .video-hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--bg) 0%, var(--bg) 15%, transparent 100%);
+  background: linear-gradient(to right, var(--bg) 0%, var(--bg) 25%, transparent 100%);
   /* Ultra-tight gradient for maximum video exposure */
   z-index: 2;
 }
@@ -595,22 +595,26 @@ h6 {
 
 @media (min-width: 1024px) {
   .video-hero {
-    padding: 8rem 0;
+    min-height: 90vh;
+    padding: 0;
   }
 
   .video-hero__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    /* Remove grid to allow text to naturally sit on the left */
+    display: block;
   }
 
-  .video-hero__media {
-    height: 500px;
-    margin-left: auto;
-    margin-right: 0;
+  .video-hero__content {
+    max-width: 600px;
+    padding: 4rem 0;
   }
 
   .video-hero__media video {
-    object-position: center;
+    object-position: 50% center; /* Consistent with mobile success */
+  }
+
+  .video-hero__overlay {
+    background: linear-gradient(to right, var(--bg) 0%, var(--bg) 40%, transparent 100%);
   }
 }
 
