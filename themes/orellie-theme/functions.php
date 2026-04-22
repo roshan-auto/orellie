@@ -72,7 +72,7 @@ function orellie_enqueue_assets() {
 		'orellie-style',
 		get_stylesheet_uri(),
 		array( 'orellie-google-fonts' ),
-		wp_get_theme()->get( 'Version' )
+		filemtime( get_stylesheet_directory() . '/style.css' ) // Dynamic cache buster based on exact file save time
 	);
 
 	// Theme JS
@@ -80,7 +80,7 @@ function orellie_enqueue_assets() {
 		'orellie-main',
 		get_template_directory_uri() . '/assets/js/main.js',
 		array(),
-		wp_get_theme()->get( 'Version' ),
+		filemtime( get_template_directory() . '/assets/js/main.js' ),
 		true
 	);
 }
