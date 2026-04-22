@@ -21,7 +21,7 @@ get_header();
       loop 
       muted 
       playsinline 
-      poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
+      poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Woman_revealing_earring_202604131110.jpeg' ); ?>">
       <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
     </video>
     <!-- Left-to-right gradient to blend text area with background -->
