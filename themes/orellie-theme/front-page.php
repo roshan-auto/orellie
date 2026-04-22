@@ -14,23 +14,8 @@ get_header();
      HERO VIDEO SECTION
      ═══════════════════════════════════════════════ -->
 <section class="video-hero">
-  <!-- Video Background -->
-  <video 
-    class="video-hero__bg" 
-    autoplay 
-    loop 
-    muted 
-    playsinline 
-    poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
-    <!-- Dynamic Cache Buster v3 applied for Hostinger Auto-Deploy -->
-    <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
-  </video>
-  
-  <!-- Overlay to ensure text readability -->
-  <div class="video-hero__overlay"></div>
-
-  <!-- Text Content on the left -->
   <div class="container video-hero__container">
+    <!-- Text Content on the left -->
     <div class="video-hero__content">
       <div class="badge video-hero__badge animate-fadeInUp">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
@@ -54,8 +39,20 @@ get_header();
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         <?php endif; ?>
-        <a href="#features" class="btn btn-outline btn-lg" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); color: white;">Explore Styles</a>
+        <a href="#features" class="btn btn-outline btn-lg">Explore Styles</a>
       </div>
+    </div>
+
+    <!-- Video Content on the right -->
+    <div class="video-hero__media animate-fadeInUp animate-fadeInUp-delay-4">
+      <video 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        poster="<?php echo esc_url( get_template_directory_uri() . '/assets/images/signature/Model_wearing_earring_202604131109.jpeg' ); ?>">
+        <source src="<?php echo esc_url( get_template_directory_uri() . '/assets/videos/hero.mp4?v=3' ); ?>" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
