@@ -96,7 +96,7 @@ get_header();
         <div class="feature-number">03</div>
         <div>
           <h3>Hypoallergenic fittings.</h3>
-          <p>Your comfort is our priority. We exclusively use surgical steel and titanium posts, safe for even the most sensitive ears.</p>
+          <p>Your comfort is our priority. We exclusively use 316L Surgical steel posts only, safe for even the most sensitive ears.</p>
         </div>
       </div>
     </div>
@@ -282,24 +282,41 @@ get_header();
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- ══════════════════════════════════════════════
+     ABOUT SECTION
+     ══════════════════════════════════════════════ -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-section__grid">
+      <div class="about-section__content">
+        <div class="badge badge--pink animate-fadeInUp">About Me</div>
+        <h2 class="animate-fadeInUp animate-fadeInUp-delay-1">Meet the maker</h2>
+        <div class="about-section__text animate-fadeInUp animate-fadeInUp-delay-2">
+          <p>Hi, I’m Nadiee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
+          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using hypoallergenic, 316L surgical steel posts—so they are comfortable and safe to wear.</p>
+          <p>Now, every pair I make is designed with care, using hypoallergenic materials, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
+        </div>
+      </div>
+      <div class="about-section__image animate-fadeInUp animate-fadeInUp-delay-3">
+        <div class="image-frame">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nadiee.jpg' ); ?>" alt="Nadiee - Creator of Orellie">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
      TRUST SIGNALS
-     ═══════════════════════════════════════════════ -->
+     ══════════════════════════════════════════════ -->
 <section class="cta-banner">
   <div class="container">
-    <div class="trust-signals" style="margin-bottom: 3rem;">
+    <div class="trust-signals">
       <span>🇳🇿 Made in New Zealand</span>
       <span>💎 Hypoallergenic fittings</span>
       <span>📦 Free NZ shipping over $80</span>
       <span>✨ Gift packaging included</span>
     </div>
-
-    <h2>Not sure where to start?</h2>
-    <p>Take our style quiz and we'll recommend the perfect Orellie piece for you.</p>
-    <a href="#" class="btn btn-outline btn-lg">
-      Take the Style Quiz
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    </a>
   </div>
 </section>
 
