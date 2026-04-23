@@ -2006,6 +2006,10 @@ h6 {
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 /* Anchor offsets for fixed header */
 #about {
   scroll-margin-top: 120px;
