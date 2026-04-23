@@ -53,10 +53,7 @@ get_header(); ?>
             <li>Store it carefully</li>
             <li>Clean gently and infrequently</li>
           </ul>
-          <hr>
-          <h2>Damage</h2>
-          <p>If your earrings become bent, loose, or damaged, stop wearing them and contact us for advice.</p>
-          <p>Normal wear and tear, including minor surface marks or natural fading of plated finishes over time, is not considered a manufacturing fault.</p>
+
         </div>
       </article>
     </div>
