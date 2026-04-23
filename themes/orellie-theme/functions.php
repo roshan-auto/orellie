@@ -176,7 +176,9 @@ function orellie_intercept_help_pages() {
 		'jewellery-care',
 		'orders',
 		'privacy-policy',
-		'terms-of-use'
+		'terms-of-use',
+		'contact',
+		'gift-cards'
 	);
 
 	foreach ( $slugs as $slug ) {
