@@ -1923,3 +1923,85 @@ h6 {
   background: var(--border);
   margin: 4rem 0;
 }
+
+/* ────────────────────────────────────────────────
+   SOCIAL CONNECT SECTION
+   ──────────────────────────────────────────────── */
+.social-connect {
+  padding: 4rem 0;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+}
+
+.social-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.social-btn:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.social-btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.social-btn__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Instagram Colors */
+.social-btn--instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Facebook Colors */
+.social-btn--facebook {
+  background: #1877F2;
+}
+
+/* TikTok Colors */
+.social-btn--tiktok {
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn--tiktok::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #ff0050 0%, #00f2ea 100%);
+  opacity: 0.2;
+}
+
+@media (max-width: 1024px) {
+  .social-buttons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .social-btn {
+    padding: 1.5rem;
+  }
+}

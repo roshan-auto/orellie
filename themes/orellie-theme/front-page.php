@@ -292,14 +292,14 @@ get_header();
         <div class="badge badge--pink animate-fadeInUp">About Me</div>
         <h2 class="animate-fadeInUp animate-fadeInUp-delay-1">Meet the maker</h2>
         <div class="about-section__text animate-fadeInUp animate-fadeInUp-delay-2">
-          <p>Hi, I’m Nadiee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
+          <p>Hi, I’m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
           <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using hypoallergenic, 316L surgical steel posts—so they are comfortable and safe to wear.</p>
           <p>Now, every pair I make is designed with care, using hypoallergenic materials, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
         </div>
       </div>
       <div class="about-section__image animate-fadeInUp animate-fadeInUp-delay-3">
         <div class="image-frame">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nadiee.jpg' ); ?>" alt="Nadiee - Creator of Orellie">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/nadiee.jpg' ); ?>" alt="Nadee - Creator of Orellie">
         </div>
       </div>
     </div>
