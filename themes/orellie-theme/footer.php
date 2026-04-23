@@ -18,7 +18,7 @@
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) : '#'; ?>">All Earrings</a></li>
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=popularity' : '#'; ?>">Best Sellers</a></li>
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=date' : '#'; ?>">New Arrivals</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/gift-cards/' ) ); ?>">Gift Cards</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/product/gift-card/' ) ); ?>">Gift Cards</a></li>
         </ul>
       </div>
 
