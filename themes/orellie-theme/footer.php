@@ -18,7 +18,7 @@
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) : '#'; ?>">All Earrings</a></li>
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=popularity' : '#'; ?>">Best Sellers</a></li>
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=date' : '#'; ?>">New Arrivals</a></li>
-          <li><a href="#">Gift Cards</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/gift-cards/' ) ); ?>">Gift Cards</a></li>
         </ul>
       </div>
 
@@ -37,8 +37,8 @@
       <div class="footer-links">
         <h4>The Studio</h4>
         <ul>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">Meet the Maker</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact Us</a></li>
           <li><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a></li>
           <li><a href="<?php echo esc_url( home_url( '/terms-of-use/' ) ); ?>">Terms of Use</a></li>
         </ul>
