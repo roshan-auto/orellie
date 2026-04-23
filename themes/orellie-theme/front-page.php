@@ -285,7 +285,7 @@ get_header();
 <!-- ══════════════════════════════════════════════
      ABOUT SECTION
      ══════════════════════════════════════════════ -->
-<section class="about-section">
+<section id="about" class="about-section">
   <div class="container">
     <div class="about-section__grid">
       <div class="about-section__content">

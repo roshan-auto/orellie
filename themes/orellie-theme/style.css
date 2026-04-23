@@ -2005,3 +2005,8 @@ h6 {
     padding: 1.5rem;
   }
 }
+
+/* Anchor offsets for fixed header */
+#about {
+  scroll-margin-top: 120px;
+}
