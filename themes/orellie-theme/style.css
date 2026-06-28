@@ -325,9 +325,13 @@ h6 {
 }
 
 .site-logo__img {
-  height: 40px;
+  height: 56px;
   width: auto;
   display: block;
+}
+
+.footer-brand .site-logo__img {
+  height: 64px;
 }
 
 .nav-desktop {
