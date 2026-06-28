@@ -315,15 +315,19 @@ h6 {
 }
 
 .site-logo {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-  color: var(--foreground);
-  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s;
 }
 
 .site-logo:hover {
-  color: var(--orellie-pink);
+  opacity: 0.8;
+}
+
+.site-logo__img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-desktop {
@@ -1017,10 +1021,8 @@ h6 {
 }
 
 .footer-brand .site-logo {
-  color: #fff;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
-  display: block;
+  display: flex;
 }
 
 .footer-brand p {

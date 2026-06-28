@@ -95,8 +95,8 @@ get_header();
       <div class="feature-item">
         <div class="feature-number">03</div>
         <div>
-          <h3>Hypoallergenic fittings.</h3>
-          <p>Your comfort is our priority. We exclusively use 316L Surgical steel posts only, safe for even the most sensitive ears.</p>
+          <h3>Fittings for sensitive ears.</h3>
+          <p>Your comfort is our priority. We use 316L surgical steel posts, chosen for sensitive ears.</p>
         </div>
       </div>
     </div>
@@ -293,8 +293,8 @@ get_header();
         <h2 class="animate-fadeInUp animate-fadeInUp-delay-1">Meet the maker</h2>
         <div class="about-section__text animate-fadeInUp animate-fadeInUp-delay-2">
           <p>Hi, I’m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
-          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using hypoallergenic, 316L surgical steel posts—so they are comfortable and safe to wear.</p>
-          <p>Now, every pair I make is designed with care, using hypoallergenic materials, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
+          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using 316L surgical steel posts, chosen for sensitive ears—so they are comfortable to wear.</p>
+          <p>Now, every pair I make is designed with care, using 316L surgical steel posts, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
         </div>
       </div>
       <div class="about-section__image animate-fadeInUp animate-fadeInUp-delay-3">
@@ -313,7 +313,7 @@ get_header();
   <div class="container">
     <div class="trust-signals">
       <span>🇳🇿 Made in New Zealand</span>
-      <span>💎 Hypoallergenic fittings</span>
+      <span>💎 316L surgical steel posts</span>
       <span>📦 Free NZ shipping over $80</span>
       <span>✨ Gift packaging included</span>
     </div>
