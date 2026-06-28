@@ -83,6 +83,17 @@ function orellie_enqueue_assets() {
 		filemtime( get_template_directory() . '/assets/js/main.js' ),
 		true
 	);
+
+	// Product page: gallery ↔ variant sync (needs jQuery + WooCommerce variation script)
+	if ( is_product() ) {
+		wp_enqueue_script(
+			'orellie-product',
+			get_template_directory_uri() . '/assets/js/product.js',
+			array( 'jquery', 'wc-add-to-cart-variation' ),
+			filemtime( get_template_directory() . '/assets/js/product.js' ),
+			true
+		);
+	}
 }
 add_action( 'wp_enqueue_scripts', 'orellie_enqueue_assets' );
 
