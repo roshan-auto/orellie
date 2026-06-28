@@ -1756,13 +1756,13 @@ h6 {
 }
 
 /* ── Gallery variant name overlay ── */
-.woocommerce-product-gallery__wrapper {
+.woocommerce-product-gallery {
   position: relative !important;
-  overflow: visible !important;
 }
 
 .orellie-variant-label {
   position: absolute;
+  /* bottom is set dynamically in JS to sit at the base of the main image */
   bottom: 0;
   left: 0;
   right: 0;
@@ -1783,6 +1783,10 @@ h6 {
   z-index: 20;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.orellie-variant-label.is-visible {
+  opacity: 1;
 }
 
 .orellie-variant-label.is-visible {

@@ -3,7 +3,7 @@
  *
  * When a gallery thumbnail is clicked:
  *   1. If the image belongs to a variant, update the dropdown to match.
- *   2. Show the variant name as a floating label over the gallery.
+ *   2. Show the variant name as a full-width strip at the bottom of the main image.
  *
  * When the dropdown changes to a found variation, show the label too.
  */
@@ -30,11 +30,26 @@
       }
     });
 
-    // Inject overlay into the main image wrapper (above thumbnails)
-    var $wrapper = $('.woocommerce-product-gallery__wrapper');
-    if (!$wrapper.length) $wrapper = $('.woocommerce-product-gallery');
+    // Append label to the outer gallery figure (avoids flexslider overflow:hidden clipping)
+    var $gallery = $('.woocommerce-product-gallery');
     var $label = $('<div class="orellie-variant-label" aria-live="polite"></div>');
-    $wrapper.append($label);
+    $gallery.append($label);
+
+    // Position the label at the bottom of the main image, above the thumbnail strip
+    function positionLabel() {
+      var $wrapper = $('.woocommerce-product-gallery__wrapper');
+      var $thumbs  = $('.flex-control-thumbs');
+      if ($wrapper.length) {
+        var wrapperH  = $wrapper.outerHeight(true);
+        var thumbsH   = $thumbs.length ? $thumbs.outerHeight(true) : 0;
+        var galleryH  = $gallery.outerHeight(true);
+        // bottom offset = gallery height minus wrapper height, measured from gallery bottom
+        $label.css('bottom', (galleryH - wrapperH) + 'px');
+      }
+    }
+
+    positionLabel();
+    $(window).on('resize', positionLabel);
 
     function showLabel(text) {
       if (text) {
