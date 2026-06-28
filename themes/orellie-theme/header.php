@@ -4,6 +4,8 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+  <link rel="icon" type="image/x-icon" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-favicon.ico' ); ?>">
+  <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-favicon.ico' ); ?>">
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
