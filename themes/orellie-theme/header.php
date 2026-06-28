@@ -16,7 +16,7 @@
   <div class="container">
     <!-- Logo -->
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-logo.png' ); ?>" alt="Orellie" class="site-logo__img">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-logo.png' ); ?>" alt="Orellie" class="site-logo__img" style="height:48px;width:auto;display:block;">
     </a>
 
     <!-- Desktop Navigation -->

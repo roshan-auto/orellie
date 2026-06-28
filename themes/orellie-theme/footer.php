@@ -43,7 +43,7 @@
       <!-- Brand column -->
       <div class="footer-brand">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-logo.png' ); ?>" alt="Orellie" class="site-logo__img">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/orellie-logo.png' ); ?>" alt="Orellie" class="site-logo__img" style="height:56px;width:auto;display:block;">
         </a>
         <p>Handcrafted luxury earrings designed in Aotearoa New Zealand. Premium polymer clay. 316L surgical steel posts. Impossibly lightweight.</p>
       </div>
