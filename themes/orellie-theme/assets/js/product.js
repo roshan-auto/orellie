@@ -30,10 +30,11 @@
       }
     });
 
-    // Inject overlay element into the gallery wrapper
-    var $gallery = $('.woocommerce-product-gallery');
+    // Inject overlay into the main image wrapper (above thumbnails)
+    var $wrapper = $('.woocommerce-product-gallery__wrapper');
+    if (!$wrapper.length) $wrapper = $('.woocommerce-product-gallery');
     var $label = $('<div class="orellie-variant-label" aria-live="polite"></div>');
-    $gallery.append($label);
+    $wrapper.append($label);
 
     function showLabel(text) {
       if (text) {
