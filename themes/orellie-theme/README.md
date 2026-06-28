@@ -53,6 +53,23 @@ orellie-theme/
         └── main.js        # Mobile menu, scroll effects, animations
 ```
 
+## Deploying Updates to Hostinger (Live Site)
+
+`orellie.nz` runs this WordPress theme on **Hostinger** — not on Vercel. The Next.js app (`apps/orellie/src/`) is a mirrored frontend on Vercel that is **not the live site**.
+
+After committing changes to the theme files, run the deployment script from the repo root:
+
+```powershell
+.\apps\orellie\deploy-to-hostinger.ps1
+```
+
+This script:
+1. Extracts `apps/orellie/content/` into a temporary git subtree branch
+2. Force-pushes it to `https://github.com/roshan-auto/orellie.git` (the standalone deployment repo)
+3. Hostinger auto-deploys from that repo — the live site updates within seconds
+
+**Important:** Always update BOTH the WordPress theme files here AND the mirrored Next.js components in `apps/orellie/src/` so they stay in sync.
+
 ## Customisation
 
 All brand colours and design tokens are in CSS custom properties at the top of `style.css`. Change `--orellie-pink` to rebrand the entire theme.
