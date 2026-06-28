@@ -211,6 +211,24 @@ function orellie_intercept_help_pages() {
 add_action( 'template_redirect', 'orellie_intercept_help_pages', 5 );
 
 /* ────────────────────────────────────────────────
+   ONE-TIME MIGRATION: reset all products to unassigned
+   Runs once on first admin page load, then self-disables via option flag.
+   ──────────────────────────────────────────────── */
+add_action( 'admin_init', function () {
+	if ( get_option( '_orellie_grid_reset_v2' ) ) return;
+	$ids = get_posts( [
+		'post_type'      => 'product',
+		'post_status'    => 'any',
+		'posts_per_page' => -1,
+		'fields'         => 'ids',
+	] );
+	foreach ( $ids as $id ) {
+		update_post_meta( $id, '_orellie_signature_image', 'unassigned' );
+	}
+	update_option( '_orellie_grid_reset_v2', true );
+} );
+
+/* ────────────────────────────────────────────────
    7. Custom Includes
    ──────────────────────────────────────────────── */
 require get_template_directory() . '/inc/custom-meta.php';
