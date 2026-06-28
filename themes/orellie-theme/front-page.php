@@ -136,48 +136,60 @@ get_header();
         'signature/Woman_revealing_earring_202604131110.jpeg'
       ];
 
-      // Pull latest products
-      $args = array(
+      // Query 1: All manually pinned products (no row limit — slot assignment wins regardless of age)
+      $manual_query = new WP_Query( [
         'post_type'      => 'product',
-        'posts_per_page' => 9,
         'post_status'    => 'publish',
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-      );
-      $products_query = new WP_Query( $args );
-      
-      // 1. First Pass: Map products WITH manual slots
+        'posts_per_page' => -1,
+        'meta_query'     => [ [
+          'key'     => '_orellie_signature_image',
+          'value'   => [ '1','2','3','4','5','6','7','8','9' ],
+          'compare' => 'IN',
+        ] ],
+      ] );
       $manual_products = [];
-      $auto_products = [];
-      if ( $products_query->have_posts() ) {
-          while ( $products_query->have_posts() ) {
-              $products_query->the_post();
-              $slot_val = get_post_meta(get_the_ID(), '_orellie_signature_image', true);
-              if ($slot_val === 'unassigned') {
-                  // Explicitly excluded — skip
-              } elseif (!empty($slot_val) && is_numeric($slot_val)) {
-                  $manual_products[(int)$slot_val] = get_post();
-              } else {
-                  // Empty value = Auto (fills any empty slot)
-                  $auto_products[] = get_post();
+      if ( $manual_query->have_posts() ) {
+          while ( $manual_query->have_posts() ) {
+              $manual_query->the_post();
+              $slot = (int) get_post_meta( get_the_ID(), '_orellie_signature_image', true );
+              if ( $slot >= 1 && $slot <= 9 ) {
+                  $manual_products[ $slot ] = get_post();
               }
           }
           wp_reset_postdata();
       }
 
-      // 2. Second Pass: Assemble final grid (1-9)
-      $grid_slots = array_fill(1, 9, null);
-      // Place manuals first
-      foreach ($manual_products as $m_slot => $m_post) {
-          if ($m_slot >= 1 && $m_slot <= 9) {
-              $grid_slots[$m_slot] = $m_post;
+      // Query 2: Auto products — fill remaining empty slots (newest first)
+      $auto_query = new WP_Query( [
+        'post_type'      => 'product',
+        'post_status'    => 'publish',
+        'posts_per_page' => 9,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'meta_query'     => [ [
+          'key'     => '_orellie_signature_image',
+          'value'   => '',
+          'compare' => '=',
+        ] ],
+      ] );
+      $auto_products = [];
+      if ( $auto_query->have_posts() ) {
+          while ( $auto_query->have_posts() ) {
+              $auto_query->the_post();
+              $auto_products[] = get_post();
           }
+          wp_reset_postdata();
       }
-      // Fill remaining with auto products
-      foreach ($auto_products as $a_post) {
-          for ($i = 1; $i <= 9; $i++) {
-              if (empty($grid_slots[$i])) {
-                  $grid_slots[$i] = $a_post;
+
+      // Assemble final grid (slots 1–9)
+      $grid_slots = array_fill( 1, 9, null );
+      foreach ( $manual_products as $m_slot => $m_post ) {
+          $grid_slots[ $m_slot ] = $m_post;
+      }
+      foreach ( $auto_products as $a_post ) {
+          for ( $i = 1; $i <= 9; $i++ ) {
+              if ( empty( $grid_slots[ $i ] ) ) {
+                  $grid_slots[ $i ] = $a_post;
                   break;
               }
           }
