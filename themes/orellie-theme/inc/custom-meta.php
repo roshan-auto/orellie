@@ -17,8 +17,11 @@ function orellie_add_signature_meta_box() {
 add_action('add_meta_boxes', 'orellie_add_signature_meta_box');
 
 function orellie_signature_meta_html($post) {
-    $value = get_post_meta($post->ID, '_orellie_signature_image', true);
-    
+    $raw   = get_post_meta($post->ID, '_orellie_signature_image', true);
+    $exists = metadata_exists('post', $post->ID, '_orellie_signature_image');
+    // New products (no meta saved yet) default to "unassigned"
+    $value = $exists ? $raw : 'unassigned';
+
     $grid_images = [
         'signature/Earrings_with_matching_202604131110.jpeg',
         'signature/Earrings_with_matching_202604131110 (1).jpeg',
@@ -79,12 +82,26 @@ function orellie_signature_meta_html($post) {
 
     <p>Select home page slot (1-9):</p>
     <div class="orellie-grid-selector">
-        <label class="orellie-grid-item <?php echo empty($value) ? 'is-selected' : ''; ?>" title="Default/Auto">
-            <div style="background: #f0f0f1; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center; color: #646970;">Auto</div>
+
+        <!-- Unassigned: excluded from grid entirely (default for new products) -->
+        <label class="orellie-grid-item <?php echo ($value === 'unassigned') ? 'is-selected' : ''; ?>" title="Not shown on home page">
+            <div style="background: #f6f7f7; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 10px; text-align: center; color: #646970;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#646970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                <span style="font-weight:600;">None</span>
+            </div>
+            <input type="radio" name="orellie_signature_image" value="unassigned" <?php checked($value, 'unassigned'); ?>>
+        </label>
+
+        <!-- Auto: fills any empty slot (ordered by newest first) -->
+        <label class="orellie-grid-item <?php echo ($value === '') ? 'is-selected' : ''; ?>" title="Auto-fill an empty slot">
+            <div style="background: #f0f0f1; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 10px; text-align: center; color: #646970;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#646970" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span style="font-weight:600;">Auto</span>
+            </div>
             <input type="radio" name="orellie_signature_image" value="" <?php checked($value, ''); ?>>
         </label>
 
-        <?php foreach ($grid_images as $index => $img_path): 
+        <?php foreach ($grid_images as $index => $img_path):
             $num = $index + 1;
             $is_selected = ($value == $num);
             ?>
@@ -110,6 +127,9 @@ function orellie_signature_meta_html($post) {
 function orellie_save_signature_meta($post_id) {
     if (isset($_POST['orellie_signature_image'])) {
         update_post_meta($post_id, '_orellie_signature_image', sanitize_text_field($_POST['orellie_signature_image']));
+    } elseif (get_post_type($post_id) === 'product' && !metadata_exists('post', $post_id, '_orellie_signature_image')) {
+        // Brand-new product saved without the meta box (e.g. quick-save) — default to unassigned
+        update_post_meta($post_id, '_orellie_signature_image', 'unassigned');
     }
 }
 add_action('save_post', 'orellie_save_signature_meta');

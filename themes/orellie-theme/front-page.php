@@ -153,9 +153,12 @@ get_header();
           while ( $products_query->have_posts() ) {
               $products_query->the_post();
               $slot_val = get_post_meta(get_the_ID(), '_orellie_signature_image', true);
-              if (!empty($slot_val)) {
+              if ($slot_val === 'unassigned') {
+                  // Explicitly excluded — skip
+              } elseif (!empty($slot_val) && is_numeric($slot_val)) {
                   $manual_products[(int)$slot_val] = get_post();
               } else {
+                  // Empty value = Auto (fills any empty slot)
                   $auto_products[] = get_post();
               }
           }
