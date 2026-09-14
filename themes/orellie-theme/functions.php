@@ -185,27 +185,15 @@ function orellie_get_part( $slug, $name = null ) {
  */
 function orellie_intercept_help_pages() {
 	if ( is_admin() ) return;
-
-	$request_uri = $_SERVER['REQUEST_URI'];
-	$slugs = array(
-		'shipping-delivery',
-		'returns-exchanges',
-		'jewellery-care',
-		'orders',
-		'privacy-policy',
-		'terms-of-use',
-		'contact',
-		'gift-cards'
-	);
-
-	foreach ( $slugs as $slug ) {
-		if ( strpos( $request_uri, '/' . $slug ) !== false ) {
-			$template = get_template_directory() . '/page-' . $slug . '.php';
-			if ( file_exists( $template ) ) {
-				include $template;
-				exit;
-			}
-		}
+	$slug = orellie_help_slug();
+	if ( ! $slug ) return;
+	$template = get_template_directory() . '/page-' . $slug . '.php';
+	if ( file_exists( $template ) ) {
+		global $wp_query;
+		$wp_query->is_404 = false;
+		status_header( 200 );
+		include $template;
+		exit;
 	}
 }
 add_action( 'template_redirect', 'orellie_intercept_help_pages', 5 );
@@ -232,3 +220,4 @@ add_action( 'admin_init', function () {
    7. Custom Includes
    ──────────────────────────────────────────────── */
 require get_template_directory() . '/inc/custom-meta.php';
+require get_template_directory() . '/inc/seo.php';

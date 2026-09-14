@@ -15,9 +15,9 @@ get_header(); ?>
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
       The Full Collection
     </div>
-    <h1 class="animate-fadeInUp" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">
+    <p class="animate-fadeInUp" style="font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.02em; line-height: 1.1; color: var(--foreground); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">
       Wear What You <span class="accent">Feel.</span>
-    </h1>
+    </p>
     <p class="hero__desc animate-fadeInUp animate-fadeInUp-delay-1" style="margin-bottom: 2.5rem;">
       Every Orellie piece is handcrafted by hand in Aotearoa New Zealand from premium polymer clay. 316L surgical steel posts. Impossibly lightweight. Built to last a lifetime.
     </p>
