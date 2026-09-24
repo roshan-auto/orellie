@@ -1,6 +1,6 @@
 <?php
 /**
- * Orellie Theme — WooCommerce Archive (Shop Page) Wrapper
+ * Orellie Theme – WooCommerce Archive (Shop Page) Wrapper
  *
  * @package Orellie
  */
@@ -19,13 +19,13 @@ get_header(); ?>
       Wear What You <span class="accent">Feel.</span>
     </p>
     <p class="hero__desc animate-fadeInUp animate-fadeInUp-delay-1" style="margin-bottom: 2.5rem;">
-      Every Orellie piece is handcrafted by hand in Aotearoa New Zealand from premium polymer clay. 316L surgical steel posts. Impossibly lightweight. Built to last a lifetime.
+      Every Orellie piece is handcrafted in Aotearoa New Zealand from premium polymer clay. 316L surgical steel posts for sensitive ears. Impossibly lightweight. Built to last a lifetime.
     </p>
     <div class="trust-signals animate-fadeInUp animate-fadeInUp-delay-2">
       <span>🇳🇿 Made in New Zealand</span>
-      <span>💎 316L surgical steel posts</span>
+      <span>✨ 316L surgical steel posts</span>
       <span>📦 Free NZ shipping over $80</span>
-      <span>✨ Gift packaging included</span>
+      <span>🎁 Gift packaging included</span>
     </div>
   </div>
 </section>

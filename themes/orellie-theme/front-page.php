@@ -1,6 +1,6 @@
 <?php
 /**
- * Orellie Theme — Front Page (Homepage)
+ * Orellie Theme â€” Front Page (Homepage)
  *
  * Recreates the Next.js landing page design as a WordPress template.
  *
@@ -10,9 +10,9 @@
 get_header();
 ?>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      HERO VIDEO SECTION
-     ═══════════════════════════════════════════════ -->
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="video-hero">
   <!-- Background Video focused to the right -->
   <div class="video-hero__media">
@@ -58,9 +58,9 @@ get_header();
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FEATURES SECTION
-     ═══════════════════════════════════════════════ -->
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="features" id="features">
   <div class="container">
     <!-- Image -->
@@ -103,9 +103,9 @@ get_header();
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      SIGNATURE PRODUCT GRID
-     ═══════════════════════════════════════════════ -->
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="signature-grid">
   <div class="container">
     <div class="signature-grid__header">
@@ -136,7 +136,7 @@ get_header();
         'signature/Woman_revealing_earring_202604131110.jpeg'
       ];
 
-      // Query 1: All manually pinned products (no row limit — slot assignment wins regardless of age)
+      // Query 1: All manually pinned products (no row limit â€” slot assignment wins regardless of age)
       $manual_query = new WP_Query( [
         'post_type'      => 'product',
         'post_status'    => 'publish',
@@ -159,7 +159,7 @@ get_header();
           wp_reset_postdata();
       }
 
-      // Query 2: Auto products — fill remaining empty slots (newest first)
+      // Query 2: Auto products â€” fill remaining empty slots (newest first)
       $auto_query = new WP_Query( [
         'post_type'      => 'product',
         'post_status'    => 'publish',
@@ -181,7 +181,7 @@ get_header();
           wp_reset_postdata();
       }
 
-      // Assemble final grid (slots 1–9)
+      // Assemble final grid (slots 1â€“9)
       $grid_slots = array_fill( 1, 9, null );
       foreach ( $manual_products as $m_slot => $m_post ) {
           $grid_slots[ $m_slot ] = $m_post;
@@ -235,7 +235,7 @@ get_header();
                   </div>
                 <?php endif; ?>
                 <div class="product-card__quickview">
-                  <span>View Details →</span>
+                  <span>View Details â†’</span>
                 </div>
               </div>
 
@@ -297,9 +297,9 @@ get_header();
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      ABOUT SECTION
-     ══════════════════════════════════════════════ -->
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="about" class="about-section">
   <div class="container">
     <div class="about-section__grid">
@@ -307,8 +307,8 @@ get_header();
         <div class="badge badge--pink animate-fadeInUp">About Me</div>
         <h2 class="animate-fadeInUp animate-fadeInUp-delay-1">Meet the maker</h2>
         <div class="about-section__text animate-fadeInUp animate-fadeInUp-delay-2">
-          <p>Hi, I’m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
-          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using 316L surgical steel posts, chosen for sensitive ears—so they are comfortable to wear.</p>
+          <p>Hi, Iâ€™m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
+          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using 316L surgical steel posts, chosen for sensitive earsâ€”so they are comfortable to wear.</p>
           <p>Now, every pair I make is designed with care, using 316L surgical steel posts, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
         </div>
       </div>
@@ -321,18 +321,19 @@ get_header();
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      TRUST SIGNALS
-     ══════════════════════════════════════════════ -->
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section class="cta-banner">
   <div class="container">
     <div class="trust-signals">
-      <span>🇳🇿 Made in New Zealand</span>
-      <span>💎 316L surgical steel posts</span>
-      <span>📦 Free NZ shipping over $80</span>
-      <span>✨ Gift packaging included</span>
+      <span>🇳🇿 Handcrafted in New Zealand</span>
+      <span>✨ 316L Surgical Steel (Sensitive Ears)</span>
+      <span>📦 Free NZ Shipping Over $80</span>
+      <span>🎁 Gift Packaging Included</span>
     </div>
   </div>
 </section>
 
 <?php get_footer(); ?>
+

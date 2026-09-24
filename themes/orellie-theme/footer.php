@@ -1,9 +1,6 @@
 </main><!-- /.site-main -->
 
-<!-- ── Footer ── -->
-<!-- ────────────────────────────────────────────────
-     SOCIAL CONNECT
-     ──────────────────────────────────────────────── -->
+<!-- ════ Social Connect ════ -->
 <section class="social-connect">
   <div class="container">
     <div class="social-buttons-grid">
@@ -53,8 +50,8 @@
         <h4>Shop</h4>
         <ul>
           <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) : '#'; ?>">All Earrings</a></li>
-          <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=popularity' : '#'; ?>">Best Sellers</a></li>
-          <li><a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) . '?orderby=date' : '#'; ?>">New Arrivals</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>">Handcrafted Studs</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/product-category/dangles/' ) ); ?>">Statement Dangles</a></li>
           <li><a href="<?php echo esc_url( home_url( '/product/gift-card/' ) ); ?>">Gift Cards</a></li>
         </ul>
       </div>
@@ -63,10 +60,11 @@
       <div class="footer-links">
         <h4>Customer Care</h4>
         <ul>
-          <li><a href="<?php echo esc_url( home_url( '/shipping-delivery/' ) ); ?>">Shipping & Delivery</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/returns-exchanges/' ) ); ?>">Returns & Exchanges</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/shipping-delivery/' ) ); ?>">Shipping &amp; Delivery</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/returns-exchanges/' ) ); ?>">Returns &amp; Exchanges</a></li>
           <li><a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/orders/' ) ); ?>">Orders & Tracking</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Guide</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/gift-guide-handmade-earrings/' ) ); ?>">Gifting Guide</a></li>
         </ul>
       </div>
 
@@ -84,7 +82,7 @@
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; <?php echo date( 'Y' ); ?> Orellie. Handcrafted in Aotearoa 🇳🇿</p>
+      <p>&copy; <?php echo date( 'Y' ); ?> Orellie. Handcrafted in Aotearoa New Zealand</p>
 
       <div class="footer-social">
         <!-- Instagram -->

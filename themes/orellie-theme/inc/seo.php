@@ -12,6 +12,8 @@ function orellie_help_metadata() {
 		'privacy-policy' => array( 'Privacy Policy', 'Read the Orellie privacy policy, including how information is handled when you use the website.' ),
 		'terms-of-use' => array( 'Terms of Use', 'Read the terms of use for the Orellie website and online store.' ),
 		'gift-cards' => array( 'Gift Cards', 'Explore Orellie gift cards and read how they can be used in the online store.' ),
+		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'Complete guide to hypoallergenic earrings for sensitive ears in New Zealand. Learn why 316L surgical steel and lightweight polymer clay prevent irritation.' ),
+		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Explore handcrafted statement earrings and boutique jewellery gifts in New Zealand. Curated gift guide for birthdays, anniversaries, and bridal parties.' ),
 	);
 }
 
@@ -39,16 +41,23 @@ function orellie_seo_description() {
 	if ( function_exists( 'is_shop' ) && is_shop() ) {
 		return 'Browse Orellie handcrafted polymer clay earrings. Explore the collection of studs, hoops and dangles made in Aotearoa New Zealand.';
 	}
+	if ( function_exists( 'is_product_category' ) && is_product_category() ) {
+		$term = get_queried_object();
+		$term_desc = trim( wp_strip_all_tags( term_description() ) );
+		if ( $term_desc ) { return wp_trim_words( $term_desc, 28, '...' ); }
+		$cat_title = $term ? $term->name : 'Handmade Earrings';
+		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand from lightweight polymer clay. Hypoallergenic 316L surgical steel posts for sensitive ears.';
+	}
 	if ( is_singular() ) {
 		$post = get_queried_object();
 		$text = $post->post_excerpt ?: $post->post_content;
 		$text = trim( preg_replace( '/\s+/u', ' ', wp_strip_all_tags( strip_shortcodes( $text ) ) ) );
-		if ( $text ) { return wp_trim_words( $text, 28, '…' ); }
+		if ( $text ) { return wp_trim_words( $text, 28, '...' ); }
 		return 'Read ' . get_the_title() . ' on Orellie.';
 	}
 	if ( is_tax() || is_category() || is_tag() ) {
 		$text = trim( wp_strip_all_tags( term_description() ) );
-		return $text ? wp_trim_words( $text, 28, '…' ) : 'Browse ' . single_term_title( '', false ) . ' from Orellie.';
+		return $text ? wp_trim_words( $text, 28, '...' ) : 'Browse ' . single_term_title( '', false ) . ' from Orellie.';
 	}
 	return '';
 }
@@ -58,7 +67,11 @@ function orellie_seo_title_parts( $parts ) {
 	$help = orellie_help_slug();
 	if ( $help ) { $parts['title'] = orellie_help_metadata()[ $help ][0]; }
 	elseif ( is_front_page() ) { $parts['title'] = 'Handcrafted Polymer Clay Earrings NZ'; }
-	elseif ( function_exists( 'is_shop' ) && is_shop() ) { $parts['title'] = 'Shop Handmade Earrings NZ'; }
+	elseif ( function_exists( 'is_shop' ) && is_shop() ) { $parts['title'] = 'Shop Handmade Polymer Clay Earrings NZ'; }
+	elseif ( function_exists( 'is_product_category' ) && is_product_category() ) {
+		$cat = get_queried_object();
+		$parts['title'] = ( $cat ? $cat->name : 'Earrings' ) . ' | Handcrafted Polymer Clay Jewellery NZ';
+	}
 	else { return $parts; }
 	$parts['site'] = 'Orellie';
 	unset( $parts['tagline'] );
@@ -107,6 +120,62 @@ function orellie_seo_head() {
 	}
 }
 add_action( 'wp_head', 'orellie_seo_head', 5 );
+
+/** Enrich WooCommerce Product JSON-LD schema with Brand, NZ Origin, Materials & Shipping/Returns. */
+add_filter( 'woocommerce_structured_data_product', function ( $markup, $product ) {
+	if ( ! is_array( $markup ) ) { return $markup; }
+	$markup['brand'] = array(
+		'@type' => 'Brand',
+		'name'  => 'Orellie',
+	);
+	$markup['countryOfOrigin'] = array(
+		'@type' => 'Country',
+		'name'  => 'New Zealand',
+	);
+	$markup['material'] = 'Polymer Clay, 316L Surgical Steel';
+	if ( ! empty( $markup['offers'] ) && is_array( $markup['offers'] ) ) {
+		foreach ( $markup['offers'] as $key => $offer ) {
+			$markup['offers'][ $key ]['itemCondition'] = 'https://schema.org/NewCondition';
+			$markup['offers'][ $key ]['shippingDetails'] = array(
+				'@type' => 'OfferShippingDetails',
+				'shippingRate' => array(
+					'@type' => 'MonetaryAmount',
+					'value' => '6.50',
+					'currency' => 'NZD',
+				),
+				'shippingDestination' => array(
+					'@type' => 'DefinedRegion',
+					'addressCountry' => 'NZ',
+				),
+				'deliveryTime' => array(
+					'@type' => 'ShippingDeliveryTime',
+					'handlingTime' => array(
+						'@type' => 'QuantitativeValue',
+						'minValue' => 1,
+						'maxValue' => 2,
+						'unitCode' => 'd',
+					),
+					'transitTime' => array(
+						'@type' => 'QuantitativeValue',
+						'minValue' => 1,
+						'maxValue' => 3,
+						'unitCode' => 'd',
+					),
+				),
+			);
+			$markup['offers'][ $key ]['hasMerchantReturnPolicy'] = array(
+				'@type' => 'MerchantReturnPolicy',
+				'applicableCountry' => 'NZ',
+				'returnPolicyCategory' => 'https://schema.org/MerchantReturnFiniteReturnWindow',
+				'merchantReturnDays' => 14,
+				'returnMethod' => 'https://schema.org/ReturnByMail',
+				'returnFees' => 'https://schema.org/CustomerRemorseReturnFees',
+				'url' => home_url( '/returns-exchanges/' ),
+			);
+		}
+	}
+	return $markup;
+}, 10, 2 );
 
 /** Theme-backed help pages need a provider because they may have no DB rows. */
 add_action( 'wp_sitemaps_init', function () {
