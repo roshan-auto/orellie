@@ -7,6 +7,8 @@
 
 get_header(); 
 
+if ( ! is_product() ) :
+
 // Dynamic hero copy based on archive context
 $badge_text = 'The Full Collection';
 $hero_title = 'Wear What You <span class="accent">Feel.</span>';
@@ -42,9 +44,9 @@ if ( function_exists( 'is_product_category' ) && is_product_category() ) {
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
       <?php echo esc_html( $badge_text ); ?>
     </div>
-    <h1 class="animate-fadeInUp" style="font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.02em; line-height: 1.1; color: var(--foreground); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">
+    <p class="animate-fadeInUp" style="font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.02em; line-height: 1.1; color: var(--foreground); font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1rem;">
       <?php echo wp_kses_post( $hero_title ); ?>
-    </h1>
+    </p>
     <p class="hero__desc animate-fadeInUp animate-fadeInUp-delay-1" style="margin-bottom: 2.5rem;">
       <?php echo esc_html( $hero_desc ); ?>
     </p>
@@ -68,6 +70,8 @@ if ( function_exists( 'is_product_category' ) && is_product_category() ) {
     </div>
   </div>
 </section>
+
+<?php endif; ?>
 
 <!-- WooCommerce shop content -->
 <section style="padding-bottom: 6rem;">
