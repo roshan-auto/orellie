@@ -65,6 +65,7 @@
           <li><a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care</a></li>
           <li><a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Guide</a></li>
           <li><a href="<?php echo esc_url( home_url( '/gift-guide-handmade-earrings/' ) ); ?>">Gifting Guide</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Style &amp; Occasion Guide</a></li>
         </ul>
       </div>
 

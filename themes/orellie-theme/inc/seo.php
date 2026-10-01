@@ -14,6 +14,7 @@ function orellie_help_metadata() {
 		'gift-cards' => array( 'Gift Cards', 'Explore Orellie gift cards and read how they can be used in the online store.' ),
 		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'Complete guide to hypoallergenic earrings for sensitive ears in New Zealand. Learn why 316L surgical steel and lightweight polymer clay prevent irritation.' ),
 		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Explore handcrafted statement earrings and boutique jewellery gifts in New Zealand. Curated gift guide for birthdays, anniversaries, and bridal parties.' ),
+		'statement-earrings-style-guide' => array( 'Statement Earrings Style Guide NZ | Handcrafted Dangles & Studs', 'Complete guide to styling handcrafted statement earrings in New Zealand. Learn how to match polymer clay dangles to face shapes, outfits, and occasions with 316L surgical steel comfort.' ),
 	);
 }
 
@@ -45,6 +46,12 @@ function orellie_seo_description() {
 		$term = get_queried_object();
 		$term_desc = trim( wp_strip_all_tags( term_description() ) );
 		if ( $term_desc ) { return wp_trim_words( $term_desc, 28, '...' ); }
+		$cat_slug = $term ? $term->slug : '';
+		if ( 'studs' === $cat_slug ) {
+			return 'Shop handcrafted polymer clay stud earrings made in New Zealand. Impossibly lightweight with hypoallergenic 316L surgical steel posts for sensitive ears.';
+		} elseif ( 'dangles' === $cat_slug ) {
+			return 'Discover handcrafted statement dangle earrings made in New Zealand from lightweight polymer clay (2–5g). Zero earlobe strain with medical-grade 316L surgical steel posts.';
+		}
 		$cat_title = $term ? $term->name : 'Handmade Earrings';
 		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand from lightweight polymer clay. Hypoallergenic 316L surgical steel posts for sensitive ears.';
 	}
@@ -70,7 +77,14 @@ function orellie_seo_title_parts( $parts ) {
 	elseif ( function_exists( 'is_shop' ) && is_shop() ) { $parts['title'] = 'Shop Handmade Polymer Clay Earrings NZ'; }
 	elseif ( function_exists( 'is_product_category' ) && is_product_category() ) {
 		$cat = get_queried_object();
-		$parts['title'] = ( $cat ? $cat->name : 'Earrings' ) . ' | Handcrafted Polymer Clay Jewellery NZ';
+		$cat_slug = $cat ? $cat->slug : '';
+		if ( 'studs' === $cat_slug ) {
+			$parts['title'] = 'Handcrafted Stud Earrings NZ | Lightweight Polymer Clay';
+		} elseif ( 'dangles' === $cat_slug ) {
+			$parts['title'] = 'Handmade Statement Dangles NZ | Polymer Clay Earrings';
+		} else {
+			$parts['title'] = ( $cat ? $cat->name : 'Earrings' ) . ' | Handcrafted Polymer Clay Jewellery NZ';
+		}
 	}
 	else { return $parts; }
 	$parts['site'] = 'Orellie';
@@ -102,13 +116,17 @@ function orellie_seo_head() {
 	$title = wp_get_document_title();
 	$image = get_template_directory_uri() . '/assets/images/hero-poster.jpg';
 	if ( is_singular() && has_post_thumbnail() ) { $image = get_the_post_thumbnail_url( null, 'large' ); }
-	echo '<meta name="description" content="' . esc_attr( $description ) . '">' . "\n";
-	if ( $needs_canonical && $canonical ) { echo '<link rel="canonical" href="' . esc_url( $canonical ) . '">' . "\n"; }
+	echo '<meta name="description" content="' . esc_attr( $description ) . '">' . "
+";
+	if ( $needs_canonical && $canonical ) { echo '<link rel="canonical" href="' . esc_url( $canonical ) . '">' . "
+"; }
 	$tags = array( 'og:type' => 'website', 'og:site_name' => 'Orellie', 'og:locale' => 'en_NZ', 'og:title' => $title, 'og:description' => $description, 'og:image' => $image );
 	if ( $canonical ) { $tags['og:url'] = $canonical; }
-	foreach ( $tags as $property => $value ) { echo '<meta property="' . esc_attr( $property ) . '" content="' . esc_attr( $value ) . '">' . "\n"; }
+	foreach ( $tags as $property => $value ) { echo '<meta property="' . esc_attr( $property ) . '" content="' . esc_attr( $value ) . '">' . "
+"; }
 	foreach ( array( 'twitter:card' => 'summary_large_image', 'twitter:title' => $title, 'twitter:description' => $description, 'twitter:image' => $image ) as $name => $value ) {
-		echo '<meta name="' . esc_attr( $name ) . '" content="' . esc_attr( $value ) . '">' . "\n";
+		echo '<meta name="' . esc_attr( $name ) . '" content="' . esc_attr( $value ) . '">' . "
+";
 	}
 	if ( is_front_page() ) {
 		$origin = home_url( '/' );
@@ -116,7 +134,58 @@ function orellie_seo_head() {
 			array( '@type' => 'Organization', '@id' => $origin . '#organization', 'name' => 'Orellie', 'url' => $origin, 'logo' => get_template_directory_uri() . '/assets/images/orellie-logo.png' ),
 			array( '@type' => 'WebSite', '@id' => $origin . '#website', 'name' => 'Orellie', 'url' => $origin, 'inLanguage' => 'en-NZ', 'publisher' => array( '@id' => $origin . '#organization' ) ),
 		);
-		echo '<script type="application/ld+json">' . wp_json_encode( array( '@context' => 'https://schema.org', '@graph' => $graph ), JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . '</script>' . "\n";
+		echo '<script type="application/ld+json">' . wp_json_encode( array( '@context' => 'https://schema.org', '@graph' => $graph ), JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . '</script>' . "
+";
+	}
+	if ( $help ) {
+		$breadcrumb_graph = array(
+			'@context' => 'https://schema.org',
+			'@type' => 'BreadcrumbList',
+			'itemListElement' => array(
+				array(
+					'@type' => 'ListItem',
+					'position' => 1,
+					'name' => 'Home',
+					'item' => home_url( '/' ),
+				),
+				array(
+					'@type' => 'ListItem',
+					'position' => 2,
+					'name' => orellie_help_metadata()[ $help ][0],
+					'item' => home_url( '/' . $help . '/' ),
+				),
+			),
+		);
+		echo '<script type="application/ld+json">' . wp_json_encode( $breadcrumb_graph, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . '</script>' . "
+";
+	} elseif ( function_exists( 'is_product_category' ) && is_product_category() ) {
+		$term = get_queried_object();
+		$breadcrumb_graph = array(
+			'@context' => 'https://schema.org',
+			'@type' => 'BreadcrumbList',
+			'itemListElement' => array(
+				array(
+					'@type' => 'ListItem',
+					'position' => 1,
+					'name' => 'Home',
+					'item' => home_url( '/' ),
+				),
+				array(
+					'@type' => 'ListItem',
+					'position' => 2,
+					'name' => 'Shop',
+					'item' => class_exists( 'WooCommerce' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/shop/' ),
+				),
+				array(
+					'@type' => 'ListItem',
+					'position' => 3,
+					'name' => $term ? $term->name : 'Earrings',
+					'item' => $canonical,
+				),
+			),
+		);
+		echo '<script type="application/ld+json">' . wp_json_encode( $breadcrumb_graph, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . '</script>' . "
+";
 	}
 }
 add_action( 'wp_head', 'orellie_seo_head', 5 );
@@ -134,8 +203,15 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 	);
 	$markup['material'] = 'Polymer Clay, 316L Surgical Steel';
 	if ( ! empty( $markup['offers'] ) && is_array( $markup['offers'] ) ) {
+		$next_year = (int) date( 'Y' ) + 1;
 		foreach ( $markup['offers'] as $key => $offer ) {
 			$markup['offers'][ $key ]['itemCondition'] = 'https://schema.org/NewCondition';
+			$markup['offers'][ $key ]['priceValidUntil'] = $next_year . '-12-31';
+			$markup['offers'][ $key ]['seller'] = array(
+				'@type' => 'Organization',
+				'name'  => 'Orellie',
+				'url'   => home_url( '/' ),
+			);
 			$markup['offers'][ $key ]['shippingDetails'] = array(
 				'@type' => 'OfferShippingDetails',
 				'shippingRate' => array(

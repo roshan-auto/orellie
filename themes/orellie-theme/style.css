@@ -2139,3 +2139,28 @@ html {
 #about {
   scroll-margin-top: 120px;
 }
+/* Guide Content Tables & Enhancements */
+.entry-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.entry-content th,
+.entry-content td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.entry-content th {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--foreground);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.entry-content table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.015);
+}
