@@ -115,6 +115,32 @@ get_header(); ?>
 
       <hr>
 
+      <h2>Frequently Asked Questions About Styling Statement Earrings</h2>
+
+      <div class="faq-section" style="margin-top: 2rem;">
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How heavy should statement earrings be for all-day wear?</h3>
+          <p>For comfortable all-day wear without earlobe fatigue, statement earrings should ideally weigh under 7 grams per pair. Orellie statement dangles weigh between 2 and 5 grams, making them virtually imperceptible throughout a full day.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What earring shape flatters a round face best?</h3>
+          <p>Elongated linear drops, vertical geometric dangles, and slim rectangular silhouettes elongate the neck and balance the gentle curves of a round face. Avoid wide spherical studs or circular hoops that echo jawline fullness.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear statement earrings in a professional workplace?</h3>
+          <p>Yes. Pairing structured architectural silhouettes in monochrome, slate, cream, or deep botanical greens with clean corporate tailoring (like blazers and collared shirts) projects creative confidence while remaining refined.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How do I coordinate earrings with vibrant patterned outfits?</h3>
+          <p>When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your polymer clay earrings to that specific tone. Alternatively, speckled terrazzo or neutral clay pairs effortlessly with any pattern.</p>
+        </div>
+      </div>
+
+      <hr>
+
       <h2>Explore Handcrafted Statement Earrings</h2>
       <p>Ready to discover your next favourite signature pair? Explore our handcrafted New Zealand collections, lovingly sculpted in limited small batches by our maker Nadee:</p>
 
@@ -127,5 +153,46 @@ get_header(); ?>
     </div>
   </article>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How heavy should statement earrings be for all-day wear?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For comfortable all-day wear without earlobe fatigue, statement earrings should ideally weigh under 7 grams per pair. Orellie statement dangles weigh between 2 and 5 grams, making them virtually imperceptible throughout a full day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What earring shape flatters a round face best?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elongated linear drops, vertical geometric dangles, and slim rectangular silhouettes elongate the neck and balance the gentle curves of a round face."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I wear statement earrings in a professional workplace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pairing structured architectural silhouettes in monochrome, slate, cream, or deep botanical greens with clean corporate tailoring projects creative confidence while remaining refined."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I coordinate earrings with vibrant patterned outfits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your polymer clay earrings to that specific tone, or choose neutral speckled terrazzo."
+      }
+    }
+  ]
+}
+</script>
 
 <?php get_footer(); ?>

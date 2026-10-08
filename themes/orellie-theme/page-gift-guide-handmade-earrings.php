@@ -16,7 +16,7 @@ get_header(); ?>
 <div class="container">
   <article class="page-content animate-fadeInUp-delay-2">
     <div class="entry-content">
-      <p class="lead">Finding a gift that feels deeply personal, artful, and memorable shouldn't be difficult. Whether you are shopping for a milestone birthday, an anniversary, bridal shower gratitude, Christmas holidays, or a thoughtful surprise for someone special, handcrafted jewellery carries an emotional resonance that mass-produced accessories simply cannot match.</p>
+      <p class="lead">Finding a gift that feels deeply personal, artful, and memorable shouldn't be difficult. Whether you are shopping for a milestone birthday, an anniversary, bridal party gratitude, Christmas holidays, or a thoughtful surprise for someone special, handcrafted jewellery carries an emotional resonance that mass-produced accessories simply cannot match.</p>
 
       <p>This gifting guide is designed to help you choose the ideal pair of handcrafted polymer clay earrings from Orellie. Every pair is made in small batches in New Zealand, finished with sensitive-ear surgical steel hardware, and delivered in our signature gift-ready packaging.</p>
 
@@ -27,7 +27,7 @@ get_header(); ?>
         <li><strong>One-of-a-Kind Artistry:</strong> Because every clay slab is rolled, marbled, cut, baked, sanded, and assembled by hand in New Zealand, no two pairs are ever identical. Your recipient receives a genuine wearable art piece.</li>
         <li><strong>No Sizing Guesswork:</strong> Unlike rings, bracelets, shoes, or clothing, earrings do not require size measurements. You never have to worry about awkward size exchanges.</li>
         <li><strong>Sensitive-Skin Safe:</strong> Our <strong>316L surgical stainless steel posts</strong> ensure that even loved ones with severe metal sensitivities can wear their gift in complete comfort. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
-        <li><strong>Effortless Weight (2–5 grams):</strong> Heavy statement earrings get relegated to the back of the jewellery box. Orellie earrings are featherlight, making them an everyday joy to wear. Discover our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
+        <li><strong>Effortless Weight (2&ndash;5 grams):</strong> Heavy statement earrings get relegated to the back of the jewellery box. Orellie earrings are featherlight, making them an everyday joy to wear. Discover our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
         <li><strong>Direct Nationwide Gifting:</strong> We ship directly to recipient addresses across New Zealand with tracked courier service and complimentary luxury presentation boxes.</li>
       </ul>
 
@@ -39,7 +39,7 @@ get_header(); ?>
       <p>For the friend, sister, or partner who loves bold silhouettes, gallery exhibitions, and vibrant individuality. Statement dangles feature sweeping sculptural arches, layered botanical details, and expressive color palettes that spark instant compliments.</p>
       <ul>
         <li><strong>Style Archetypes:</strong> Sculptural arches, cascading drops, and vibrant color-blocked dangles.</li>
-        <li><strong>Top Occasions:</strong> 30th / 40th milestone birthdays, job promotions, creative accomplishments, and festive holiday celebrations.</li>
+        <li><strong>Top Occasions:</strong> 30th &amp; 40th milestone birthdays, job promotions, creative accomplishments, and festive holiday celebrations.</li>
         <li><strong>Shop the Collection:</strong> Explore our <a href="<?php echo esc_url( home_url( '/product-category/dangles/' ) ); ?>">Statement Dangles Collection</a>.</li>
       </ul>
 
@@ -62,14 +62,24 @@ get_header(); ?>
       <p>Celebrate the nurturing figures in your life with jewellery that speaks to enduring beauty and patient handcraft. Our botanical and earth-toned textured pieces resonate deeply with mothers, grandmothers, and life partners who cherish artisan craft.</p>
       <ul>
         <li><strong>Why It Works:</strong> Hypoallergenic surgical steel eliminates any worry about aging, thinning earlobe sensitivity.</li>
-        <li><strong>Top Occasions:</strong> Mother's Day, 10th/20th anniversaries, and retirement milestones.</li>
+        <li><strong>Top Occasions:</strong> Mother's Day, 10th &amp; 20th anniversaries, and retirement milestones.</li>
       </ul>
 
       <h3>5. Bridal Parties &amp; Bridesmaid Proposals</h3>
-      <p>Thank your bridal party with cohesive yet personalized handmade earrings they will genuinely wear long after the wedding day. Coordinate tones with your wedding color scheme—from soft blush and sage to crisp ivory and champagne terrazzo.</p>
+      <p>Thank your bridal party with cohesive yet personalized handmade earrings they will genuinely wear long after the wedding day. Coordinate tones with your wedding color scheme &mdash; from soft blush and sage to crisp ivory and champagne terrazzo.</p>
       <ul>
         <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready for bridesmaid proposal gift boxes.</li>
       </ul>
+
+      <h3>6. Christmas &amp; Summer Holiday Gifting Across Aotearoa</h3>
+      <p>During the busy New Zealand festive season, avoid crowded shopping malls and supply-chain delays. Our tracked domestic courier dispatch ensures timely arrival right to your doorstep or directly to your loved one's mailbox anywhere in New Zealand.</p>
+      <ul>
+        <li><strong>Stress-Free Delivery:</strong> Delivered in protective, presentation-ready gift boxes that fit easily beneath the Christmas tree.</li>
+        <li><strong>Handwritten Gift Cards:</strong> Add your custom holiday message during checkout and we will handwrite it on an artisan card at no extra charge.</li>
+      </ul>
+
+      <h3>7. Eco-Conscious &amp; Slow Fashion Gifting</h3>
+      <p>For recipients passionate about sustainability and mindful consumerism, Orellie earrings represent the antithesis of disposable fast fashion. Every pair is crafted in small limited editions with near-zero material waste, non-toxic components, and recyclable packaging.</p>
 
       <hr>
 
@@ -94,8 +104,76 @@ get_header(); ?>
         <a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>" class="btn btn-outline">Shop Studs</a>
         <a href="<?php echo class_exists('WooCommerce') ? esc_url( wc_get_page_permalink('shop') ) : esc_url( home_url( '/shop/' ) ); ?>" class="btn btn-outline">Explore All Jewellery</a>
       </div>
+
+      <hr>
+
+      <h2>Frequently Asked Questions About Gifting Orellie Jewellery</h2>
+
+      <div class="faq-section" style="margin-top: 2rem;">
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Do Orellie earrings come in gift-ready packaging?</h3>
+          <p>Yes. Every single pair of Orellie earrings arrives carefully nestled inside our signature rigid presentation box with an artisan maker's card, ready to present immediately without needing extra wrapping paper.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I ship a gift directly to the recipient with a personalized message?</h3>
+          <p>Absolutely. Enter your recipient's delivery address at checkout and type your personal message into the order notes field. We will neatly handwrite your note on a complimentary gift card and omit pricing paperwork.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What if the person I am gifting has sensitive or easily irritated ears?</h3>
+          <p>All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What is your return policy for gifted items?</h3>
+          <p>We offer a 14-day return and exchange policy for unworn items in their original packaging. Please see our <a href="<?php echo esc_url( home_url( '/returns-exchanges/' ) ); ?>">Returns &amp; Exchanges</a> page for complete details.</p>
+        </div>
+      </div>
+
     </div>
   </article>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do Orellie earrings come in gift-ready packaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every single pair of Orellie earrings arrives carefully nestled inside our signature rigid presentation box with an artisan maker's card, ready to present immediately without needing extra wrapping paper."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I ship a gift directly to the recipient with a personalized message?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enter your recipient's delivery address at checkout and type your personal message into the order notes field. We will neatly handwrite your note on a complimentary gift card and omit pricing paperwork."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the person I am gifting has sensitive or easily irritated ears?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is your return policy for gifted items?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer a 14-day return and exchange policy for unworn items in their original packaging. Please see our Returns & Exchanges page for complete details."
+      }
+    }
+  ]
+}
+</script>
 
 <?php get_footer(); ?>

@@ -97,7 +97,7 @@ get_header(); ?>
 
       <h3>Why Polymer Clay Is the Ultimate Sensitive-Ear Medium:</h3>
       <ul>
-        <li><strong>Featherlight Density:</strong> Cured polymer clay is remarkably light. A typical Orellie statement dangle weighs between <strong>2 and 5 grams</strong>—lighter than a single New Zealand 10-cent coin.</li>
+        <li><strong>Featherlight Density:</strong> Cured polymer clay is remarkably light. A typical Orellie statement dangle weighs between <strong>2 and 5 grams</strong> &mdash; lighter than a single New Zealand 10-cent coin.</li>
         <li><strong>Chemically Inert:</strong> High-grade baked polymer clay is completely skin-inert and non-toxic, containing zero heavy metals, latex, or harsh plasticizers.</li>
         <li><strong>All-Day Wearability:</strong> Because the weight is negligible, there is zero drag pulling the post against the earlobe piercing tract. You can wear expressive, sculptural statement earrings from morning meetings to evening celebrations without fatigue.</li>
       </ul>
@@ -113,11 +113,37 @@ get_header(); ?>
       <h2>Safe Cleaning &amp; Sanitizing Best Practices</h2>
       <p>Keep your earrings sparkling clean and sanitary without harming the artisan clay finish:</p>
       <ul>
-        <li><strong>Sanitize Only the Posts:</strong> Dip a cotton bud in rubbing alcohol or warm soapy water and wipe only the surgical steel post and butterfly scroll. Avoid dousing the polymer clay slab in pure alcohol, which can soften varnish or gold foil.</li>
+        <li><strong>Sanitize Only the Posts:</strong> Dip a cotton bud in 70% isopropyl alcohol and wipe only the surgical steel post and butterfly scroll. Avoid dousing the polymer clay slab in pure alcohol, which can soften varnish or gold foil.</li>
         <li><strong>Wipe Clay Gently with Damp Cloth:</strong> Use a soft lint-free cloth dampened with clean water to wipe makeup or dust from clay surfaces.</li>
         <li><strong>Apply Beauty Products First:</strong> Hair sprays, perfume mists, and sunscreens contain chemical propellants. Always apply beauty products before inserting your earrings.</li>
-        <li><strong>Review Maintenance Tips:</strong> Read our dedicated <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> and our new <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Styling Guide</a> for more advice.</li>
+        <li><strong>Review Maintenance Tips:</strong> Read our dedicated <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> and our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Styling Guide</a> for more advice.</li>
       </ul>
+
+      <hr>
+
+      <h2>Frequently Asked Questions About Hypoallergenic Earrings</h2>
+
+      <div class="faq-section" style="margin-top: 2rem;">
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What does 'hypoallergenic earrings' actually mean?</h3>
+          <p>Hypoallergenic means the materials have a significantly reduced likelihood of triggering an allergic skin reaction. In jewellery, it means avoiding reactive base metals like nickel, copper, and unrefined brass, and using biocompatible metals like 316L surgical stainless steel.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Is 316L surgical steel safe for nickel allergy sufferers?</h3>
+          <p>Yes. 316L surgical stainless steel is formulated with chromium and molybdenum which form a passive, impenetrable oxide layer. This prevents nickel ions from leaching into contact with the skin, which is why it is used in surgical tools and medical implants.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Why do heavy earrings make my ears burn or itch?</h3>
+          <p>Excess weight creates continuous physical shear stress on the piercing channel. This mechanical trauma causes micro-tears in delicate lobe tissue, mimicking allergic dermatitis symptoms like burning, throbbing, and redness even if the metal is non-reactive.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings with newly healed piercings?</h3>
+          <p>Yes. Because Orellie earrings weigh only 2 to 5 grams and feature non-corrosive 316L surgical steel, they place minimal strain on freshly healed piercings compared to heavy commercial metal jewellery.</p>
+        </div>
+      </div>
 
       <hr>
 
@@ -132,5 +158,46 @@ get_header(); ?>
     </div>
   </article>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does 'hypoallergenic earrings' actually mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hypoallergenic means the materials have a significantly reduced likelihood of triggering an allergic skin reaction by avoiding reactive base metals like nickel, copper, and unrefined brass, using biocompatible metals like 316L surgical stainless steel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is 316L surgical steel safe for nickel allergy sufferers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. 316L surgical stainless steel is formulated with chromium and molybdenum which form a passive, impenetrable oxide layer that prevents nickel ions from leaching into contact with the skin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do heavy earrings make my ears burn or itch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excess weight creates continuous physical shear stress on the piercing channel, causing micro-tears in delicate lobe tissue that mimic allergic dermatitis symptoms like burning, throbbing, and redness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I wear Orellie earrings with newly healed piercings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Because Orellie earrings weigh only 2 to 5 grams and feature non-corrosive 316L surgical steel, they place minimal strain on freshly healed piercings compared to heavy commercial metal jewellery."
+      }
+    }
+  ]
+}
+</script>
 
 <?php get_footer(); ?>
