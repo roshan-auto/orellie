@@ -43,6 +43,7 @@ get_header(); ?>
         <li><strong>Biocompatible &amp; Medical-Grade:</strong> 316L is the exact grade trusted in medical implants and professional body piercings due to its exceptional purity and bio-stability.</li>
         <li><strong>Virtually Zero Nickel Release:</strong> While 316L contains tightly bound nickel within its alloy matrix, its high molybdenum (2-3%) and chromium (16-18%) content forms a passive protective oxide barrier that prevents nickel ions from leaching into the skin.</li>
         <li><strong>Corrosion &amp; Tarnish Resistant in NZ Climates:</strong> Unlike sterling silver which oxidizes and tarnishes rapidly with coastal salt humidity, 316L remains bright, clean, and completely resistant to sweat and moisture across all New Zealand seasons.</li>
+        <li><strong>Standard 20-Gauge (0.8mm) Fitment:</strong> All posts are manufactured to standard 20-gauge thickness, sliding smoothly through standard lobe piercings without stretching or friction trauma.</li>
         <li><strong>Sturdy &amp; Secure Fitment:</strong> Surgical steel posts do not bend, warp, or snap under gentle pressure, ensuring snug butterfly back fitment so your earrings stay safely positioned.</li>
       </ol>
 
@@ -140,6 +141,16 @@ get_header(); ?>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What gauge (thickness) are Orellie earring posts?</h3>
+          <p>All Orellie stud and dangle posts are standard 20-gauge (0.8mm) diameter. This is the optimal thickness for comfortable insertion into standard lobe piercings without stretching or friction.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings in humid coastal New Zealand weather?</h3>
+          <p>Yes. 316L surgical steel is specifically engineered with molybdenum to resist pitting and chloride corrosion from sea spray and humid coastal air, unlike sterling silver or brass which tarnish and corrode.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings with newly healed piercings?</h3>
           <p>Yes. Because Orellie earrings weigh only 2 to 5 grams and feature non-corrosive 316L surgical steel, they place minimal strain on freshly healed piercings compared to heavy commercial metal jewellery.</p>
         </div>
@@ -186,6 +197,22 @@ get_header(); ?>
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Excess weight creates continuous physical shear stress on the piercing channel, causing micro-tears in delicate lobe tissue that mimic allergic dermatitis symptoms like burning, throbbing, and redness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What gauge (thickness) are Orellie earring posts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All Orellie stud and dangle posts are standard 20-gauge (0.8mm) diameter. This is the optimal thickness for comfortable insertion into standard lobe piercings without stretching or friction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I wear Orellie earrings in humid coastal New Zealand weather?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. 316L surgical steel is specifically engineered with molybdenum to resist pitting and chloride corrosion from sea spray and humid coastal air, unlike sterling silver or brass which tarnish and corrode."
       }
     },
     {

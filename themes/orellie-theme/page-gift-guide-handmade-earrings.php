@@ -35,15 +35,30 @@ get_header(); ?>
 
       <h2>Curated Gifting Ideas by Occasion &amp; Recipient</h2>
 
-      <h3>1. For the Creative &amp; Bold: Expressive Statement Dangles</h3>
-      <p>For the friend, sister, or partner who loves bold silhouettes, gallery exhibitions, and vibrant individuality. Statement dangles feature sweeping sculptural arches, layered botanical details, and expressive color palettes that spark instant compliments.</p>
+      <h3>1. Milestone Birthdays (21st, 30th, 40th, 50th &amp; Beyond)</h3>
+      <p>Milestone birthdays celebrate significant chapters in a loved one's life. Rather than gifting something generic from a shopping mall department store, an artisan pair of statement dangles marks the occasion with vibrant individuality.</p>
       <ul>
-        <li><strong>Style Archetypes:</strong> Sculptural arches, cascading drops, and vibrant color-blocked dangles.</li>
-        <li><strong>Top Occasions:</strong> 30th &amp; 40th milestone birthdays, job promotions, creative accomplishments, and festive holiday celebrations.</li>
+        <li><strong>21st &amp; 30th Birthdays:</strong> Bold geometric silhouettes, terrazzo marbling, and high-contrast color palettes that transition seamlessly from daytime brunch to evening celebrations.</li>
+        <li><strong>40th, 50th &amp; 60th Birthdays:</strong> Organic botanical arches, muted terracotta, sage, and warm ochre tones that exude sophisticated artistic elegance.</li>
         <li><strong>Shop the Collection:</strong> Explore our <a href="<?php echo esc_url( home_url( '/product-category/dangles/' ) ); ?>">Statement Dangles Collection</a>.</li>
       </ul>
 
-      <h3>2. For Everyday Elegance: Handcrafted Stud Earrings</h3>
+      <h3>2. Anniversaries &amp; Romantic Keepsakes</h3>
+      <p>Jewellery has always been the quintessential anniversary gift, but handcrafted artisan jewellery tells a deeper story of intentional craft, patience, and uniqueness. In contemporary gifting traditions, polymer clay and surgical steel symbolize modern artistry, enduring strength, and lasting beauty.</p>
+      <ul>
+        <li><strong>Why It Resonates:</strong> Hand-marbled patterns mean the piece is as unique as your shared journey. No two swirls or slab cuts can ever be replicated.</li>
+        <li><strong>Perfect Pairings:</strong> Pair our architectural drop earrings with a romantic dinner date in Auckland, Wellington, or Christchurch for an unforgettable reveal.</li>
+      </ul>
+
+      <h3>3. Bridal Parties &amp; Bridesmaid Proposals</h3>
+      <p>Thank your bridal party with cohesive yet personalized handmade earrings they will genuinely cherish and wear long after your wedding day. Coordinate tones with your wedding color scheme &mdash; from soft blush and sage to crisp ivory and champagne terrazzo.</p>
+      <ul>
+        <li><strong>All-Day Comfort:</strong> Weighing only 2&ndash;5 grams, bridesmaids can wear them comfortably from 8 AM hair and makeup through the ceremony and late-night reception dancing with zero earlobe fatigue.</li>
+        <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready to tuck into bridesmaid proposal hampers.</li>
+        <li><strong>Custom Coordination:</strong> Looking for a matching palette for 4 or more bridesmaids? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact us</a> for bespoke bridal party suggestions.</li>
+      </ul>
+
+      <h3>4. For Everyday Elegance: Handcrafted Stud Earrings</h3>
       <p>For the recipient whose aesthetic leans toward quiet luxury, minimalist polish, and functional daily ease. Handcrafted clay studs offer organic texture, earthy hues, and clean geometric lines that elevate casual tees and office tailoring alike.</p>
       <ul>
         <li><strong>Style Archetypes:</strong> Textured organic discs, speckled clay dots, and subtle floral studs.</li>
@@ -51,31 +66,18 @@ get_header(); ?>
         <li><strong>Shop the Collection:</strong> Explore our <a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>">Handcrafted Studs Collection</a>.</li>
       </ul>
 
-      <h3>3. Secret Santa &amp; Workplace Kris Kringle (Under $35 NZD)</h3>
+      <h3>5. Secret Santa &amp; Workplace Kris Kringle (Under $35 NZD)</h3>
       <p>Workplace gift exchanges and end-of-year Secret Santa celebrations require thoughtful, high-quality presents within an accessible budget. Handcrafted polymer clay studs provide a boutique, artisan touch that far exceeds high-street fast-fashion novelties.</p>
       <ul>
         <li><strong>Why It Works:</strong> Universally loved, size-free, and packaged in a sleek gift box ready for the office tree.</li>
         <li><strong>Top Occasions:</strong> Corporate Kris Kringle, school teacher appreciation, neighbour gifts, and stocking stuffers.</li>
       </ul>
 
-      <h3>4. Mother's Day &amp; Milestone Anniversaries</h3>
-      <p>Celebrate the nurturing figures in your life with jewellery that speaks to enduring beauty and patient handcraft. Our botanical and earth-toned textured pieces resonate deeply with mothers, grandmothers, and life partners who cherish artisan craft.</p>
+      <h3>6. Mother's Day &amp; Milestone Celebrations</h3>
+      <p>Celebrate mothers, grandmothers, and mentors with jewellery that speaks to enduring beauty and patient handcraft. Our botanical and earth-toned textured pieces resonate deeply with women who cherish artisan craft.</p>
       <ul>
-        <li><strong>Why It Works:</strong> Hypoallergenic surgical steel eliminates any worry about aging, thinning earlobe sensitivity.</li>
-        <li><strong>Top Occasions:</strong> Mother's Day, 10th &amp; 20th anniversaries, and retirement milestones.</li>
-      </ul>
-
-      <h3>5. Bridal Parties &amp; Bridesmaid Proposals</h3>
-      <p>Thank your bridal party with cohesive yet personalized handmade earrings they will genuinely wear long after the wedding day. Coordinate tones with your wedding color scheme &mdash; from soft blush and sage to crisp ivory and champagne terrazzo.</p>
-      <ul>
-        <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready for bridesmaid proposal gift boxes.</li>
-      </ul>
-
-      <h3>6. Christmas &amp; Summer Holiday Gifting Across Aotearoa</h3>
-      <p>During the busy New Zealand festive season, avoid crowded shopping malls and supply-chain delays. Our tracked domestic courier dispatch ensures timely arrival right to your doorstep or directly to your loved one's mailbox anywhere in New Zealand.</p>
-      <ul>
-        <li><strong>Stress-Free Delivery:</strong> Delivered in protective, presentation-ready gift boxes that fit easily beneath the Christmas tree.</li>
-        <li><strong>Handwritten Gift Cards:</strong> Add your custom holiday message during checkout and we will handwrite it on an artisan card at no extra charge.</li>
+        <li><strong>Why It Works:</strong> Hypoallergenic 316L surgical steel eliminates any worry about aging, thinning earlobe sensitivity.</li>
+        <li><strong>Top Occasions:</strong> Mother's Day, retirement milestones, and family reunions.</li>
       </ul>
 
       <h3>7. Eco-Conscious &amp; Slow Fashion Gifting</h3>
@@ -83,13 +85,13 @@ get_header(); ?>
 
       <hr>
 
-      <h2>Complimentary Gift Packaging &amp; Direct Delivery</h2>
+      <h2>Complimentary Gift Packaging &amp; Nationwide NZ Delivery</h2>
       <p>We believe the unboxing experience is an integral part of the gift. Every Orellie order includes:</p>
       <ul>
         <li><strong>Rigid Presentation Box:</strong> Protective, eco-conscious gift packaging designed to keep earrings pristine during transit and provide a permanent home on their dresser.</li>
         <li><strong>Maker's Card &amp; Care Details:</strong> An enclosed artisan card detailing the handmade Aotearoa New Zealand origin, 316L steel specs, and care recommendations.</li>
-        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong>.</li>
-        <li><strong>Direct Delivery to Recipient:</strong> Simply enter your recipient's address at checkout and add a personalized note in the order notes; we will handwrite your message on a bespoke gift card.</li>
+        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong> (or flat-rate $6.50 nationwide).</li>
+        <li><strong>Direct Delivery to Recipient:</strong> Simply enter your recipient's address at checkout and add a personalized note in the order notes; we will handwrite your message on a bespoke gift card with zero pricing paperwork.</li>
       </ul>
 
       <hr>
@@ -123,6 +125,16 @@ get_header(); ?>
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What if the person I am gifting has sensitive or easily irritated ears?</h3>
           <p>All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How fast does gift delivery take across New Zealand?</h3>
+          <p>Orders are dispatched within 1 to 2 business days via tracked domestic courier. Standard transit times are 1 to 2 business days for North Island metro addresses and 2 to 3 business days for South Island and rural RD addresses.</p>
+        </div>
+
+        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I order matching or coordinated earring sets for a bridal party?</h3>
+          <p>Yes. We regularly supply coordinated handmade sets for bridal parties and bridesmaids across New Zealand. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -162,6 +174,22 @@ get_header(); ?>
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast does gift delivery take across New Zealand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Orders are dispatched within 1 to 2 business days via tracked domestic courier. Standard transit times are 1 to 2 business days for North Island metro addresses and 2 to 3 business days for South Island and rural RD addresses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I order matching or coordinated earring sets for a bridal party?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We regularly supply coordinated handmade sets for bridal parties and bridesmaids across New Zealand. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs."
       }
     },
     {
