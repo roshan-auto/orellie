@@ -106,10 +106,13 @@ add_filter( 'loop_shop_columns', function () {
 	return 3;
 } );
 
-// Products per page
+// Products per page: a multiple of 2, 3 and 4 so full pages never leave a ragged row
 add_filter( 'loop_shop_per_page', function () {
-	return 12;
+	return 24;
 } );
+
+// The shop hero carries the h1, so drop WooCommerce's own page title
+add_filter( 'woocommerce_show_page_title', '__return_false' );
 
 // Remove default WooCommerce sidebar
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );

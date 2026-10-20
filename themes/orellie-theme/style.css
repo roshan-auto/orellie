@@ -1149,14 +1149,27 @@ h6 {
   cursor: pointer;
 }
 
-/* Product grid — WooCommerce native */
+/* Product grid — WooCommerce native.
+   Tracks are doubled (each card spans 2) so a short last row can be centred. */
 .woocommerce ul.products {
   display: grid !important;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+/* WooCommerce's clearfix pseudo-elements become grid cells: an empty first
+   slot and a pushed-down last card. The grid does not need them. */
+.woocommerce ul.products::before,
+.woocommerce ul.products::after {
+  content: none !important;
+  display: none !important;
+}
+
+.woocommerce ul.products li.product {
+  grid-column: span 2;
 }
 
 .woocommerce ul.products li.product {
@@ -1573,18 +1586,101 @@ h6 {
   color: var(--orellie-pink) !important;
 }
 
-/* Responsive product grid */
+/* Responsive product grid: 2 cards (4 tracks), then 3 cards (6 tracks).
+   A lone or paired last row sits in the middle instead of hugging the left. */
 @media (min-width: 640px) {
   .woocommerce ul.products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .woocommerce ul.products li.product:nth-child(2n+1):last-child {
+    grid-column: 2 / span 2;
   }
 }
 
 @media (min-width: 1024px) {
   .woocommerce ul.products {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 4rem 2rem;
   }
+  .woocommerce ul.products li.product:nth-child(2n+1):last-child {
+    grid-column: span 2;
+  }
+  .woocommerce ul.products li.product:nth-child(3n+1):last-child {
+    grid-column: 3 / span 2;
+  }
+  .woocommerce ul.products li.product:nth-child(3n+1):nth-last-child(2) {
+    grid-column: 2 / span 2;
+  }
+}
+
+/* Shop hero: title, one line, category chips */
+.shop-hero {
+  padding: 6rem 0 2.5rem;
+}
+
+.shop-hero__inner {
+  text-align: center;
+  max-width: 640px;
+}
+
+.shop-hero__title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--foreground);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  margin: 0 0 0.75rem;
+}
+
+.shop-hero__title .accent {
+  color: var(--orellie-pink);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.shop-hero__desc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 auto 1.75rem;
+}
+
+.shop-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.shop-chip {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--foreground);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.shop-chip:hover {
+  border-color: var(--orellie-pink);
+  color: var(--orellie-pink);
+}
+
+.shop-chip.is-active {
+  background: var(--orellie-pink);
+  border-color: var(--orellie-pink);
+  color: #fff;
+}
+
+/* Keep the pagination clear of the last row's buttons */
+.woocommerce nav.woocommerce-pagination {
+  margin-top: 4rem;
+  text-align: center;
 }
 
 /* ── Single product page ── */
