@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="entry-content">
       <p class="lead">For many jewellery lovers across New Zealand, finding statement earrings that do not leave ears itchy, red or sore is an ongoing challenge. Sensitive ears are common, and words like "hypoallergenic" are often used without much explanation.</p>
 
-      <p>This guide explains what usually causes the reaction, why the post material and the weight of an earring both matter, and how Orellie makes lightweight polymer clay earrings with sensitive ears in mind.</p>
+      <p>This guide explains what usually causes the reaction, why the post material and the weight of an earring both matter, and how Orellie makes earrings with sensitive ears in mind.</p>
 
       <hr>
 
@@ -94,10 +94,10 @@ get_header(); ?>
       <h2>The Overlooked Factor: Earring Weight</h2>
       <p>Comfort is not only about metal. <strong>Heavy earrings</strong> pull on the piercing all day, which can leave earlobes sore and can stretch the piercing over time.</p>
 
-      <h3>Why Polymer Clay Suits Sensitive Ears:</h3>
+      <h3>Choosing for Comfort:</h3>
       <ul>
-        <li><strong>Lightweight:</strong> Baked polymer clay is light, so even a bold statement dangle sits comfortably.</li>
-        <li><strong>All-day wear:</strong> Less weight means less pull on the piercing, so you can wear expressive earrings from morning to evening.</li>
+        <li><strong>Check the size:</strong> Most of our product pages give the earring's size, so you can judge how big a piece is before you buy.</li>
+        <li><strong>Start small:</strong> If your ears are tender, studs and smaller drops put the least pull on a piercing.</li>
       </ul>
 
       <hr>
@@ -111,8 +111,8 @@ get_header(); ?>
       <h2>Cleaning Your Earrings Safely</h2>
       <p>Keep your earrings clean without harming the handmade finish:</p>
       <ul>
-        <li><strong>Clean only the posts with alcohol:</strong> Dip a cotton bud in 70% isopropyl alcohol and wipe only the steel post and back. Keep alcohol off the clay, as it can dull the finish or lift gold foil.</li>
-        <li><strong>Wipe the clay with a damp cloth:</strong> A soft cloth dampened with clean water removes makeup and dust.</li>
+        <li><strong>Clean only the posts with alcohol:</strong> Dip a cotton bud in 70% isopropyl alcohol and wipe only the steel post and back. Keep alcohol off the earring itself, as it can dull the finish or lift gold foil.</li>
+        <li><strong>Wipe the earring with a damp cloth:</strong> A soft cloth dampened with clean water removes makeup and dust.</li>
         <li><strong>Earrings on last:</strong> Put on hairspray, perfume and sunscreen before your earrings.</li>
         <li><strong>More care tips:</strong> Read our <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> and our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
       </ul>
@@ -139,12 +139,12 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Will Orellie earrings tarnish in humid weather?</h3>
-          <p>The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the clay and any metal accents.</p>
+          <p>The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings in a new piercing?</h3>
-          <p>Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, lightweight earrings with 316L surgical steel posts are a gentle choice.</p>
+          <p>Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, earrings with 316L surgical steel posts are a gentle choice.</p>
         </div>
       </div>
 
@@ -196,7 +196,7 @@ get_header(); ?>
       "name": "Will Orellie earrings tarnish in humid weather?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the clay and any metal accents."
+        "text": "The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents."
       }
     },
     {
@@ -204,7 +204,7 @@ get_header(); ?>
       "name": "Can I wear Orellie earrings in a new piercing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, lightweight earrings with 316L surgical steel posts are a gentle choice."
+        "text": "Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, earrings with 316L surgical steel posts are a gentle choice."
       }
     }
   ]

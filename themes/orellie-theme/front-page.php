@@ -87,8 +87,8 @@ get_header();
       <div class="feature-item">
         <div class="feature-number">02</div>
         <div>
-          <h3>Incredibly lightweight.</h3>
-          <p>We use premium polymer clay designed to be so light, you'll forget you're wearing them. Statement earrings that don't weigh you down.</p>
+          <h3>Resin and polymer clay.</h3>
+          <p>Some of our earrings are resin and some are polymer clay. Where we know which, the product page says so.</p>
         </div>
       </div>
 

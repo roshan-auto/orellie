@@ -7,14 +7,14 @@ function orellie_help_metadata() {
 		'contact' => array( 'Contact Orellie', 'Contact Orellie with questions about your earrings, an order or the collection.' ),
 		'shipping-delivery' => array( 'Shipping and Delivery', 'Read Orellie shipping and delivery information for your jewellery order.' ),
 		'returns-exchanges' => array( 'Returns and Exchanges', 'Read Orellie returns and exchanges information and find out how to contact us about an order.' ),
-		'jewellery-care' => array( 'Polymer Clay Jewellery Care & Cleaning Guide NZ', 'Complete guide on how to clean, store, and care for polymer clay earrings in New Zealand. Learn water safety, makeup removal, and 316L steel post sanitizing tips.' ),
+		'jewellery-care' => array( 'Polymer Clay Jewellery Care & Cleaning Guide NZ', 'How to clean, store and care for resin and polymer clay earrings in New Zealand: water, makeup removal and cleaning 316L steel posts.' ),
 		'orders' => array( 'Order Help', 'Find help with your Orellie order and contact details for order enquiries.' ),
 		'privacy-policy' => array( 'Privacy Policy', 'Read the Orellie privacy policy, including how information is handled when you use the website.' ),
 		'terms-of-use' => array( 'Terms of Use', 'Read the terms of use for the Orellie website and online store.' ),
 		'gift-cards' => array( 'Gift Cards', 'Explore Orellie gift cards and read how they can be used in the online store.' ),
-		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'A New Zealand guide to hypoallergenic earrings for sensitive ears. Learn why 316L surgical steel posts and lightweight polymer clay are gentler on your ears.' ),
-		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Curated gift guide for handcrafted statement earrings in New Zealand. Discover polymer clay earrings with 316L surgical steel posts for birthdays, anniversaries, and bridal gifts.' ),
-		'statement-earrings-style-guide' => array( 'Statement Earrings Style Guide NZ | Handcrafted Dangles & Studs', 'Complete guide to styling handcrafted statement earrings in New Zealand. Learn how to match polymer clay dangles to face shapes, outfits, and occasions, all on 316L surgical steel posts.' ),
+		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'A New Zealand guide to hypoallergenic earrings for sensitive ears. Learn why the post metal and the weight of an earring both matter.' ),
+		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Curated gift guide for handcrafted statement earrings in New Zealand. Discover resin and polymer clay earrings with 316L surgical steel posts for birthdays, anniversaries, and bridal gifts.' ),
+		'statement-earrings-style-guide' => array( 'Statement Earrings Style Guide NZ | Handcrafted Dangles & Studs', 'Complete guide to styling handcrafted statement earrings in New Zealand. Learn how to match handmade dangles to face shapes, outfits, and occasions, all on 316L surgical steel posts.' ),
 	);
 }
 
@@ -37,10 +37,10 @@ function orellie_seo_description() {
 	$help = orellie_help_slug();
 	if ( $help ) { return orellie_help_metadata()[ $help ][1]; }
 	if ( is_front_page() ) {
-		return 'Shop handcrafted polymer clay earrings made in Aotearoa New Zealand. Explore Orellie studs, hoops and dangles for everyday wear and gifts.';
+		return 'Shop handcrafted resin and polymer clay earrings made in Aotearoa New Zealand. Explore Orellie studs, hoops and dangles for everyday wear and gifts.';
 	}
 	if ( function_exists( 'is_shop' ) && is_shop() ) {
-		return 'Browse Orellie handcrafted polymer clay earrings. Explore the collection of studs, hoops and dangles made in Aotearoa New Zealand.';
+		return 'Browse Orellie handcrafted resin and polymer clay earrings. Explore the collection of studs, hoops and dangles made in Aotearoa New Zealand.';
 	}
 	if ( function_exists( 'is_product_category' ) && is_product_category() ) {
 		$term = get_queried_object();
@@ -48,12 +48,12 @@ function orellie_seo_description() {
 		if ( $term_desc ) { return wp_trim_words( $term_desc, 28, '...' ); }
 		$cat_slug = $term ? $term->slug : '';
 		if ( 'studs' === $cat_slug ) {
-			return 'Shop handcrafted polymer clay stud earrings made in New Zealand. Lightweight, with 316L surgical steel posts chosen for sensitive ears.';
+			return 'Shop handcrafted stud earrings made in New Zealand, in resin and polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
 		} elseif ( 'dangles' === $cat_slug ) {
-			return 'Discover handcrafted statement dangle earrings made in New Zealand from lightweight polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
+			return 'Discover handcrafted statement dangle earrings made in New Zealand, in resin and polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
 		}
 		$cat_title = $term ? $term->name : 'Handmade Earrings';
-		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand from lightweight polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
+		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand, with 316L surgical steel posts chosen for sensitive ears.';
 	}
 	if ( is_singular() ) {
 		$post = get_queried_object();

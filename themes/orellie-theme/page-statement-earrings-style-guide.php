@@ -18,18 +18,17 @@ get_header(); ?>
     <div class="entry-content">
       <p class="lead">Statement earrings have become an essential signature in contemporary New Zealand fashion. From effortless weekend brunches along Ponsonby or Wellington's waterfront to corporate boardrooms and garden weddings, a sculptural, artful pair of earrings has the rare power to transform an entire outfit in seconds.</p>
 
-      <p>Yet many women hesitate to wear statement earrings because traditional high-street options feel uncomfortably heavy, pull at earlobes, or leave ears itchy by mid-afternoon. Handcrafted polymer clay changes that. Combining a light weight with bold shapes, here is your definitive guide to choosing, styling, and wearing statement earrings in New Zealand.</p>
+      <p>Yet many women hesitate to wear statement earrings because some feel heavy, pull at earlobes, or leave ears itchy by mid-afternoon. Here is our guide to choosing, styling, and wearing statement earrings comfortably in New Zealand.</p>
 
       <hr>
 
-      <h2>1. The Polymer Clay Advantage: High Drama Without Earlobe Fatigue</h2>
+      <h2>1. Comfort First: Size, Weight and Posts</h2>
       <p>Large metal statement earrings can be heavy. Wearing that weight for a few hours pulls down on your piercing and can leave your earlobes sore.</p>
 
-      <p>By contrast, baked polymer clay is <strong>lightweight</strong>:</p>
+      <p>A few things decide how comfortable a pair feels:</p>
       <ul>
-        <li><strong>Big Look, Light Feel:</strong> Even a multi-tiered Orellie dangle stays light enough to wear all day.</li>
+        <li><strong>Check the Size:</strong> Most Orellie product pages give the earring's size, so you can picture the scale before you buy.</li>
         <li><strong>Less Sagging:</strong> Lighter earrings sit better against your lobe and pull less on the piercing.</li>
-        <li><strong>True All-Day Wearability:</strong> Put them on at 7:30 AM for work, transition into evening drinks, and forget you are even wearing them until someone compliments your style.</li>
         <li><strong>For Sensitive Ears:</strong> Every pair is made with <strong>316L surgical steel posts</strong>, chosen for sensitive ears. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
       </ul>
 
@@ -95,7 +94,7 @@ get_header(); ?>
       <hr>
 
       <h2>4. Color Theory &amp; Wardrobe Coordination</h2>
-      <p>Polymer clay allows for nuanced custom color mixing, marble swirls, and delicate botanical canes that metallic jewellery simply cannot replicate.</p>
+      <p>Colour is where handmade earrings shine. Use these pairings as a starting point:</p>
       <ul>
         <li><strong>Warm Earth Neutrals (Terracotta, Mustard, Desert Sand):</strong> Complement natural linen, khaki greens, crisp white shirts, and warm gold accents.</li>
         <li><strong>Cool &amp; Jewel Tones (Sage Green, Deep Teal, Navy, Plum):</strong> Pair gorgeously with charcoal knitwear, denim, blush silk, and winter coats.</li>
@@ -105,11 +104,11 @@ get_header(); ?>
       <hr>
 
       <h2>5. Safe Storage &amp; Longevity Best Practices</h2>
-      <p>While cured polymer clay has flexible durability, thoughtful care keeps the hand-finished texture and steel posts looking their best for years:</p>
+      <p>A little care keeps the finish and steel posts looking their best for years:</p>
       <ul>
         <li><strong>Store Flat or Hanging:</strong> Keep your statement dangles on a dedicated jewellery rack or inside their original rigid Orellie presentation box. Avoid tossing them loose into a handbag.</li>
         <li><strong>Moisture &amp; Heat Protection:</strong> Remove earrings before showering, swimming in heated pools, or entering hot springs. Avoid leaving jewellery on sunny car dashboards.</li>
-        <li><strong>Clean with a Damp Cloth:</strong> Gently wipe clay surfaces with a soft, clean cloth dampened with water. Never use acetone, alcohol, or harsh household chemicals on clay surfaces.</li>
+        <li><strong>Clean with a Damp Cloth:</strong> Gently wipe the earrings with a soft, clean cloth dampened with water. Never use acetone, alcohol, or harsh household chemicals on them.</li>
         <li><strong>Review Full Guidelines:</strong> Read our complete <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> for comprehensive maintenance tips.</li>
       </ul>
 
@@ -120,7 +119,7 @@ get_header(); ?>
       <div class="faq-section" style="margin-top: 2rem;">
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How heavy should statement earrings be for all-day wear?</h3>
-          <p>Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Orellie dangles are made from lightweight polymer clay, so they stay comfortable from morning to evening.</p>
+          <p>Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Most Orellie product pages give the earring's size, so you can choose a scale that suits you.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -135,7 +134,7 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How do I coordinate earrings with vibrant patterned outfits?</h3>
-          <p>When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your polymer clay earrings to that specific tone. Alternatively, speckled terrazzo or neutral clay pairs effortlessly with any pattern.</p>
+          <p>When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your earrings to that specific tone. Alternatively, speckled terrazzo or neutral pieces pair effortlessly with any pattern.</p>
         </div>
       </div>
 
@@ -164,7 +163,7 @@ get_header(); ?>
       "name": "How heavy should statement earrings be for all-day wear?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Orellie dangles are made from lightweight polymer clay, so they stay comfortable from morning to evening."
+        "text": "Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Most Orellie product pages give the earring's size, so you can choose a scale that suits you."
       }
     },
     {
@@ -188,7 +187,7 @@ get_header(); ?>
       "name": "How do I coordinate earrings with vibrant patterned outfits?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your polymer clay earrings to that specific tone, or choose neutral speckled terrazzo."
+        "text": "When wearing busy floral or geometric prints, pick out a subtle secondary or accent color from your clothing pattern and match your earrings to that specific tone, or choose neutral speckled terrazzo."
       }
     }
   ]

@@ -18,16 +18,16 @@ get_header(); ?>
     <div class="entry-content">
       <p class="lead">Finding a gift that feels deeply personal, artful, and memorable shouldn't be difficult. Whether you are shopping for a milestone birthday, an anniversary, bridal party gratitude, Christmas holidays, or a thoughtful surprise for someone special, handcrafted jewellery carries an emotional resonance that mass-produced accessories simply cannot match.</p>
 
-      <p>This gifting guide is designed to help you choose the ideal pair of handcrafted polymer clay earrings from Orellie. Every pair is made in small batches in New Zealand, finished with 316L surgical steel posts chosen for sensitive ears, and gift-packaged.</p>
+      <p>This gifting guide is designed to help you choose the ideal pair of handcrafted earrings from Orellie. Every pair is made in small batches in New Zealand, finished with 316L surgical steel posts chosen for sensitive ears, and gift-packaged.</p>
 
       <hr>
 
-      <h2>Why Handmade Polymer Clay Earrings Make the Ultimate Gift</h2>
+      <h2>Why Handmade Earrings Make the Ultimate Gift</h2>
       <ul>
-        <li><strong>One-of-a-Kind Artistry:</strong> Because every clay slab is rolled, marbled, cut, baked, sanded, and assembled by hand in New Zealand, no two pairs are ever identical. Your recipient receives a genuine wearable art piece.</li>
+        <li><strong>One-of-a-Kind Artistry:</strong> Because every pair is made by hand in New Zealand, no two are exactly alike. Your recipient receives a genuine wearable art piece.</li>
         <li><strong>No Sizing Guesswork:</strong> Unlike rings, bracelets, shoes, or clothing, earrings do not require size measurements. You never have to worry about awkward size exchanges.</li>
         <li><strong>Kind to Sensitive Ears:</strong> Our <strong>316L surgical steel posts</strong> are chosen for sensitive ears, so most people can wear their gift comfortably. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
-        <li><strong>Lightweight:</strong> Heavy statement earrings get relegated to the back of the jewellery box. Orellie earrings are lightweight polymer clay, making them an everyday joy to wear. Discover our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
+        <li><strong>Easy to Style:</strong> Not sure what suits them? Our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a> matches earring shapes to face shapes and outfits.</li>
         <li><strong>Direct Nationwide Gifting:</strong> We ship directly to recipient addresses across New Zealand with tracked courier service and complimentary luxury presentation boxes.</li>
       </ul>
 
@@ -44,30 +44,29 @@ get_header(); ?>
       </ul>
 
       <h3>2. Anniversaries &amp; Romantic Keepsakes</h3>
-      <p>Jewellery has always been the quintessential anniversary gift, but handcrafted artisan jewellery tells a deeper story of intentional craft, patience, and uniqueness. In contemporary gifting traditions, polymer clay and surgical steel symbolize modern artistry, enduring strength, and lasting beauty.</p>
+      <p>Jewellery has always been the quintessential anniversary gift, but handcrafted artisan jewellery tells a deeper story of intentional craft, patience, and uniqueness.</p>
       <ul>
-        <li><strong>Why It Resonates:</strong> Hand-marbled patterns mean the piece is as unique as your shared journey. No two swirls or slab cuts can ever be replicated.</li>
+        <li><strong>Why It Resonates:</strong> Each pair is made by hand, so the one you give is theirs alone.</li>
         <li><strong>Perfect Pairings:</strong> Pair our architectural drop earrings with a romantic dinner date in Auckland, Wellington, or Christchurch for an unforgettable reveal.</li>
       </ul>
 
       <h3>3. Bridal Parties &amp; Bridesmaid Proposals</h3>
       <p>Thank your bridal party with cohesive yet personalised handmade earrings they will genuinely cherish and wear long after your wedding day. Coordinate tones with your wedding colour scheme, from soft blush and sage to crisp ivory and champagne terrazzo.</p>
       <ul>
-        <li><strong>All-Day Comfort:</strong> Lightweight enough that bridesmaids can wear them comfortably from morning hair and makeup through the ceremony and late-night reception dancing.</li>
         <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready to tuck into bridesmaid proposal hampers.</li>
         <li><strong>Custom Coordination:</strong> Looking for a matching palette for 4 or more bridesmaids? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact us</a> for bespoke bridal party suggestions.</li>
       </ul>
 
       <h3>4. For Everyday Elegance: Handcrafted Stud Earrings</h3>
-      <p>For the recipient whose aesthetic leans toward quiet luxury, minimalist polish, and functional daily ease. Handcrafted clay studs offer organic texture, earthy hues, and clean geometric lines that elevate casual tees and office tailoring alike.</p>
+      <p>For the recipient whose aesthetic leans toward quiet luxury, minimalist polish, and functional daily ease. Handcrafted studs offer organic texture, earthy hues, and clean geometric lines that elevate casual tees and office tailoring alike.</p>
       <ul>
-        <li><strong>Style Archetypes:</strong> Textured organic discs, speckled clay dots, and subtle floral studs.</li>
+        <li><strong>Style Archetypes:</strong> Textured organic discs, speckled dots, and subtle floral studs.</li>
         <li><strong>Top Occasions:</strong> "Thinking of you" surprises, thank-you tokens, graduation gifts, and corporate appreciation.</li>
         <li><strong>Shop the Collection:</strong> Explore our <a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>">Handcrafted Studs Collection</a>.</li>
       </ul>
 
       <h3>5. Secret Santa &amp; Workplace Kris Kringle (Under $35 NZD)</h3>
-      <p>Workplace gift exchanges and end-of-year Secret Santa celebrations require thoughtful, high-quality presents within an accessible budget. Handcrafted polymer clay studs provide a boutique, artisan touch that far exceeds high-street fast-fashion novelties.</p>
+      <p>Workplace gift exchanges and end-of-year Secret Santa celebrations require thoughtful, high-quality presents within an accessible budget. Handcrafted studs provide a boutique, artisan touch that far exceeds high-street fast-fashion novelties.</p>
       <ul>
         <li><strong>Why It Works:</strong> Universally loved, size-free, and gift-packaged ready for the office tree.</li>
         <li><strong>Top Occasions:</strong> Corporate Kris Kringle, school teacher appreciation, neighbour gifts, and stocking stuffers.</li>
@@ -76,7 +75,7 @@ get_header(); ?>
       <h3>6. Mother's Day &amp; Milestone Celebrations</h3>
       <p>Celebrate mothers, grandmothers, and mentors with jewellery that speaks to enduring beauty and patient handcraft. Our botanical and earth-toned textured pieces resonate deeply with women who cherish artisan craft.</p>
       <ul>
-        <li><strong>Why It Works:</strong> Lightweight clay on 316L surgical steel posts is gentle on earlobes that have become more sensitive with age.</li>
+        <li><strong>Why It Works:</strong> Our 316L surgical steel posts are chosen for sensitive ears.</li>
         <li><strong>Top Occasions:</strong> Mother's Day, retirement milestones, and family reunions.</li>
       </ul>
 
