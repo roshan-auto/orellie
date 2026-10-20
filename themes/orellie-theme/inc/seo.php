@@ -214,11 +214,6 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 	$markup['additionalProperty'] = array(
 		array(
 			'@type' => 'PropertyValue',
-			'name'  => 'Weight',
-			'value' => '2–5g (Lightweight)',
-		),
-		array(
-			'@type' => 'PropertyValue',
 			'name'  => 'Post Material',
 			'value' => '316L Surgical Steel',
 		),
@@ -289,7 +284,7 @@ function orellie_single_product_trust_signals() {
 		<ul style="margin: 0; padding-left: 1.2rem; font-size: 0.875rem; line-height: 1.6; color: #4a4a4a;">
 			<li style="margin-bottom: 0.35rem;"><strong>Handmade in Aotearoa:</strong> Sculpted, baked, and finished by hand in small artisan batches.</li>
 			<li style="margin-bottom: 0.35rem;"><strong>For Sensitive Ears:</strong> <strong>316L surgical steel</strong> posts, chosen for sensitive ears.</li>
-			<li style="margin-bottom: 0.35rem;"><strong>Lightweight (2&ndash;5g):</strong> Polymer clay keeps statement pieces comfortable for all-day wear.</li>
+			<li style="margin-bottom: 0.35rem;"><strong>Lightweight:</strong> Polymer clay keeps statement pieces comfortable for all-day wear.</li>
 			<li style="margin-bottom: 0.35rem;"><strong>Tracked NZ Shipping:</strong> Nationwide delivery from $6, free on orders over $80.</li>
 			<li><strong>Gift-Ready Presentation:</strong> Every order comes gift-packaged, perfect for birthdays and celebrations.</li>
 		</ul>
