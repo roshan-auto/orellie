@@ -90,7 +90,7 @@ get_header(); ?>
       <ul>
         <li><strong>Rigid Presentation Box:</strong> Protective, eco-conscious gift packaging designed to keep earrings pristine during transit and provide a permanent home on their dresser.</li>
         <li><strong>Maker's Card &amp; Care Details:</strong> An enclosed artisan card detailing the handmade Aotearoa New Zealand origin, 316L steel specs, and care recommendations.</li>
-        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong> (or flat-rate $6.50 nationwide).</li>
+        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong> (otherwise from $6 nationwide).</li>
         <li><strong>Direct Delivery to Recipient:</strong> Simply enter your recipient's address at checkout and add a personalized note in the order notes; we will handwrite your message on a bespoke gift card with zero pricing paperwork.</li>
       </ul>
 
