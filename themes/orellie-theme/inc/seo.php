@@ -190,18 +190,6 @@ function orellie_seo_head() {
 }
 add_action( 'wp_head', 'orellie_seo_head', 5 );
 
-/**
- * The earring's body material as orellie.com states it: 'Resin', 'Polymer clay' or ''.
- * Set per product by scripts/orellie-import/sync-materials.py. Empty means .com says
- * nothing, so the site says nothing: resin and clay pieces differ in weight and feel.
- */
-function orellie_product_material( $product ) {
-	if ( ! $product instanceof WC_Product ) { return ''; }
-	$labels = array( 'resin' => 'Resin', 'polymer-clay' => 'Polymer clay' );
-	$key = (string) $product->get_meta( '_orellie_material' );
-	return $labels[ $key ] ?? '';
-}
-
 /** Enrich WooCommerce Product JSON-LD schema with Brand, NZ Origin, Materials & Shipping/Returns. */
 add_filter( 'woocommerce_structured_data_product', function ( $markup, $product ) {
 	if ( ! is_array( $markup ) ) { return $markup; }
@@ -213,9 +201,8 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 		'@type' => 'Country',
 		'name'  => 'New Zealand',
 	);
-	$material = orellie_product_material( $product );
-	$markup['material'] = $material ? $material . ', 316L Surgical Steel' : '316L Surgical Steel';
-	$markup['category'] = 'Earrings';
+	$markup['material'] = 'Polymer Clay, 316L Surgical Steel';
+	$markup['category'] = 'Earrings > Handmade Polymer Clay Earrings';
 	$markup['audience'] = array(
 		'@type' => 'PeopleAudience',
 		'suggestedGender' => 'female',
@@ -225,6 +212,11 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 		),
 	);
 	$markup['additionalProperty'] = array(
+		array(
+			'@type' => 'PropertyValue',
+			'name'  => 'Weight',
+			'value' => '2–5g (Lightweight)',
+		),
 		array(
 			'@type' => 'PropertyValue',
 			'name'  => 'Post Material',
@@ -287,22 +279,17 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 	return $markup;
 }, 10, 2 );
 
-/** Add on-page NZ trust and delivery signals on single product pages. Every line must hold for this product. */
+/** Add on-page NZ trust and delivery signals on single product pages. */
 function orellie_single_product_trust_signals() {
-	global $product;
-	if ( ! $product instanceof WC_Product || $product->is_virtual() || $product->is_type( 'pw-gift-card' ) ) { return; }
-	$material = orellie_product_material( $product );
 	?>
 	<div class="product-trust-card" style="margin: 1.5rem 0 2rem; padding: 1.25rem 1.5rem; background: #faf9f6; border: 1px solid var(--border, #e8e2dc); border-radius: 8px;">
 		<h4 style="margin: 0 0 0.75rem; font-family: var(--font-serif, serif); font-size: 1.05rem; font-weight: 500; color: var(--foreground, #1a1a1a);">
 			The Orellie Craftsmanship Promise
 		</h4>
 		<ul style="margin: 0; padding-left: 1.2rem; font-size: 0.875rem; line-height: 1.6; color: #4a4a4a;">
-			<li style="margin-bottom: 0.35rem;"><strong>Handmade in Aotearoa:</strong> Made and finished by hand in small artisan batches.</li>
-			<?php if ( $material ) : ?>
-			<li style="margin-bottom: 0.35rem;"><strong>Material:</strong> <?php echo esc_html( $material ); ?>.</li>
-			<?php endif; ?>
+			<li style="margin-bottom: 0.35rem;"><strong>Handmade in Aotearoa:</strong> Sculpted, baked, and finished by hand in small artisan batches.</li>
 			<li style="margin-bottom: 0.35rem;"><strong>For Sensitive Ears:</strong> <strong>316L surgical steel</strong> posts, chosen for sensitive ears.</li>
+			<li style="margin-bottom: 0.35rem;"><strong>Lightweight (2&ndash;5g):</strong> Polymer clay keeps statement pieces comfortable for all-day wear.</li>
 			<li style="margin-bottom: 0.35rem;"><strong>Tracked NZ Shipping:</strong> Nationwide delivery from $6, free on orders over $80.</li>
 			<li><strong>Gift-Ready Presentation:</strong> Every order comes gift-packaged, perfect for birthdays and celebrations.</li>
 		</ul>
@@ -319,7 +306,7 @@ add_filter( 'wp_get_attachment_image_attributes', function ( $attr, $attachment 
 	if ( empty( $alt ) || strtolower( $alt ) === 'image' || strtolower( $alt ) === 'product' ) {
 		$title = get_the_title();
 		if ( $title && ( ( function_exists( 'is_product' ) && is_product() ) || ( function_exists( 'is_shop' ) && is_shop() ) || ( function_exists( 'is_product_category' ) && is_product_category() ) ) ) {
-			$attr['alt'] = esc_attr( $title . ' - Handmade Earrings NZ | Orellie' );
+			$attr['alt'] = esc_attr( $title . ' - Handcrafted Polymer Clay Earrings NZ | Orellie' );
 		}
 	}
 	return $attr;
