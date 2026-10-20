@@ -264,7 +264,7 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 				'@type' => 'MerchantReturnPolicy',
 				'applicableCountry' => 'NZ',
 				'returnPolicyCategory' => 'https://schema.org/MerchantReturnFiniteReturnWindow',
-				'merchantReturnDays' => 14,
+				'merchantReturnDays' => 7,
 				'returnMethod' => 'https://schema.org/ReturnByMail',
 				'returnFees' => 'https://schema.org/CustomerRemorseReturnFees',
 				'url' => home_url( '/returns-exchanges/' ),
