@@ -50,7 +50,18 @@ $chip_slugs = array( 'studs', 'dangles', 'hoops', 'halloween', 'collections' );
 $chips      = array();
 foreach ( $chip_slugs as $chip_slug ) {
 	$chip_term = get_term_by( 'slug', $chip_slug, 'product_cat' );
-	if ( $chip_term && ! is_wp_error( $chip_term ) && $chip_term->count > 0 ) {
+	if ( ! $chip_term || is_wp_error( $chip_term ) ) {
+		continue;
+	}
+	// A parent like Collections holds its products in subcategories.
+	$chip_count = $chip_term->count;
+	foreach ( get_term_children( $chip_term->term_id, 'product_cat' ) as $child_id ) {
+		$child = get_term( $child_id, 'product_cat' );
+		if ( $child && ! is_wp_error( $child ) ) {
+			$chip_count += $child->count;
+		}
+	}
+	if ( $chip_count > 0 ) {
 		$chips[] = $chip_term;
 	}
 }
