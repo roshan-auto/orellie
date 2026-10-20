@@ -1,6 +1,6 @@
 <?php
 /**
- * Orellie Theme â€” Front Page (Homepage)
+ * Orellie Theme - Front Page (Homepage)
  *
  * Recreates the Next.js landing page design as a WordPress template.
  *
@@ -10,9 +10,9 @@
 get_header();
 ?>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ===============================================
      HERO VIDEO SECTION
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     =============================================== -->
 <section class="video-hero">
   <!-- Background Video focused to the right -->
   <div class="video-hero__media">
@@ -58,9 +58,9 @@ get_header();
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ===============================================
      FEATURES SECTION
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     =============================================== -->
 <section class="features" id="features">
   <div class="container">
     <!-- Image -->
@@ -103,9 +103,9 @@ get_header();
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ===============================================
      SIGNATURE PRODUCT GRID
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     =============================================== -->
 <section class="signature-grid">
   <div class="container">
     <div class="signature-grid__header">
@@ -136,7 +136,7 @@ get_header();
         'signature/Woman_revealing_earring_202604131110.jpeg'
       ];
 
-      // Query 1: All manually pinned products (no row limit â€” slot assignment wins regardless of age)
+      // Query 1: All manually pinned products (no row limit; slot assignment wins regardless of age)
       $manual_query = new WP_Query( [
         'post_type'      => 'product',
         'post_status'    => 'publish',
@@ -159,73 +159,68 @@ get_header();
           wp_reset_postdata();
       }
 
-      // Query 2: Auto products â€” fill remaining empty slots (newest first)
+      // Query 2: Auto products fill remaining empty slots (newest first).
+      // They show their own product photo, because the slot's model photo is of a different earring.
+      // "Auto" is a saved empty value; a missing value means "None" (see inc/custom-meta.php).
+      // Filtered in PHP because a meta_query on an empty string is unreliable.
       $auto_query = new WP_Query( [
         'post_type'      => 'product',
         'post_status'    => 'publish',
-        'posts_per_page' => 9,
+        'posts_per_page' => 60,
         'orderby'        => 'date',
         'order'          => 'DESC',
-        'meta_query'     => [ [
-          'key'     => '_orellie_signature_image',
-          'value'   => '',
-          'compare' => '=',
-        ] ],
+        'post__not_in'   => array_map( function ( $p ) { return $p->ID; }, array_values( $manual_products ) ),
+        'no_found_rows'  => true,
       ] );
       $auto_products = [];
-      if ( $auto_query->have_posts() ) {
-          while ( $auto_query->have_posts() ) {
-              $auto_query->the_post();
-              $auto_products[] = get_post();
+      foreach ( $auto_query->posts as $a_post ) {
+          if ( metadata_exists( 'post', $a_post->ID, '_orellie_signature_image' )
+              && '' === get_post_meta( $a_post->ID, '_orellie_signature_image', true ) ) {
+              $auto_products[] = $a_post;
           }
-          wp_reset_postdata();
+          if ( count( $auto_products ) >= 9 ) break;
       }
 
-      // Assemble final grid (slots 1â€“9)
+      // Assemble final grid (slots 1-9). Pinned products keep the slot's model photo.
       $grid_slots = array_fill( 1, 9, null );
+      $slot_is_auto = array_fill( 1, 9, false );
       foreach ( $manual_products as $m_slot => $m_post ) {
           $grid_slots[ $m_slot ] = $m_post;
       }
       foreach ( $auto_products as $a_post ) {
           for ( $i = 1; $i <= 9; $i++ ) {
               if ( empty( $grid_slots[ $i ] ) ) {
-                  $grid_slots[ $i ] = $a_post;
+                  $grid_slots[ $i ]   = $a_post;
+                  $slot_is_auto[ $i ] = true;
                   break;
               }
           }
       }
-
-      // Define static placeholders for empty slots
-      $placeholders = array(
-        array( 'name' => 'Rose Petal Studs',      'price' => '$55.00' ),
-        array( 'name' => 'Gilded Blossom Set',    'price' => '$85.00' ),
-        array( 'name' => 'Signature Pearline',    'price' => '$75.00' ),
-        array( 'name' => 'Artisan Curve',         'price' => '$95.00' ),
-        array( 'name' => 'Ethereal Dangles',      'price' => '$80.00' ),
-        array( 'name' => 'Minimal 31mm Studs',    'price' => '$45.00' ),
-        array( 'name' => 'Classic 14mm Studs',    'price' => '$40.00' ),
-        array( 'name' => 'Geometric Precision',   'price' => '$110.00' ),
-        array( 'name' => 'Celestial Aura Drops',  'price' => '$65.00' ),
-      );
-      $placeholder_iter = 0;
+      // A slot with no real product is left out: never show a made-up item or price.
       ?>
-      
+
       <div class="product-grid">
         <?php
         for ($slot = 1; $slot <= 9; $slot++) :
           $product_obj = $grid_slots[$slot];
-          $model_img = $grid_images[$slot - 1];
-          
-          if ($product_obj) :
-            $post = $product_obj;
-            setup_postdata($post);
-            global $product;
-            $product = wc_get_product($post->ID);
+          if ( ! $product_obj ) continue;
+          $post = $product_obj;
+          setup_postdata($post);
+          global $product;
+          $product = wc_get_product($post->ID);
+          if ( ! $product ) { wp_reset_postdata(); continue; }
+
+          if ( $slot_is_auto[ $slot ] ) {
+            $card_img = get_the_post_thumbnail_url( $post->ID, 'woocommerce_single' );
+            if ( ! $card_img ) $card_img = wc_placeholder_img_src( 'woocommerce_single' );
+          } else {
+            $card_img = get_template_directory_uri() . '/assets/images/' . $grid_images[ $slot - 1 ];
+          }
             ?>
             <a href="<?php the_permalink($post->ID); ?>" class="product-card">
               <div class="product-card__image">
                 <img
-                  src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $model_img ); ?>"
+                  src="<?php echo esc_url( $card_img ); ?>"
                   alt="<?php echo esc_attr($post->post_title); ?>"
                   loading="lazy"
                 >
@@ -235,7 +230,7 @@ get_header();
                   </div>
                 <?php endif; ?>
                 <div class="product-card__quickview">
-                  <span>View Details â†’</span>
+                  <span>View Details &rarr;</span>
                 </div>
               </div>
 
@@ -256,32 +251,6 @@ get_header();
             </a>
             <?php
             wp_reset_postdata();
-          else :
-            // No product in this slot, use placeholder copy
-            $item = $placeholders[$placeholder_iter % count($placeholders)];
-            $placeholder_iter++;
-            ?>
-            <div class="product-card">
-              <div class="product-card__image">
-                <img
-                  src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $model_img ); ?>"
-                  alt="<?php echo esc_attr( $item['name'] ); ?>"
-                  loading="lazy"
-                >
-                <div class="product-card__quickview">
-                  <span>Available Soon</span>
-                </div>
-              </div>
-              <div class="product-card__info">
-                <div>
-                  <div class="product-card__name"><?php echo esc_html( $item['name'] ); ?></div>
-                  <div class="product-card__category">Coming Soon</div>
-                </div>
-                <div class="product-card__price"><?php echo esc_html( $item['price'] ); ?></div>
-              </div>
-            </div>
-          <?php
-          endif;
         endfor;
         ?>
       </div>
@@ -297,9 +266,9 @@ get_header();
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ==============================================
      ABOUT SECTION
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     ============================================== -->
 <section id="about" class="about-section">
   <div class="container">
     <div class="about-section__grid">
@@ -307,8 +276,8 @@ get_header();
         <div class="badge badge--pink animate-fadeInUp">About Me</div>
         <h2 class="animate-fadeInUp animate-fadeInUp-delay-1">Meet the maker</h2>
         <div class="about-section__text animate-fadeInUp animate-fadeInUp-delay-2">
-          <p>Hi, Iâ€™m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
-          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using 316L surgical steel posts, chosen for sensitive earsâ€”so they are comfortable to wear.</p>
+          <p>Hi, I’m Nadee, a mum of two little ones and the maker behind Orellie. Handcraft has always been my passion. I started with sugarcraft, and over time that love grew into creating handmade earrings. What began as curiosity quickly turned into something I truly fell in love with.</p>
+          <p>Because I have sensitive skin, I struggled to wear many beautiful earrings. This inspired me to create my own using 316L surgical steel posts, chosen for sensitive ears, so they are comfortable to wear.</p>
           <p>Now, every pair I make is designed with care, using 316L surgical steel posts, so others can enjoy them too. Each piece is handmade with love, made to bring a little joy to your everyday.</p>
         </div>
       </div>
@@ -321,9 +290,9 @@ get_header();
   </div>
 </section>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ==============================================
      TRUST SIGNALS
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+     ============================================== -->
 <section class="cta-banner">
   <div class="container">
     <div class="trust-signals">
