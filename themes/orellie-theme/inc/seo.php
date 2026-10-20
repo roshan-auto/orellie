@@ -7,7 +7,7 @@ function orellie_help_metadata() {
 		'contact' => array( 'Contact Orellie', 'Contact Orellie with questions about your earrings, an order or the collection.' ),
 		'shipping-delivery' => array( 'Shipping and Delivery', 'Read Orellie shipping and delivery information for your jewellery order.' ),
 		'returns-exchanges' => array( 'Returns and Exchanges', 'Read Orellie returns and exchanges information and find out how to contact us about an order.' ),
-		'jewellery-care' => array( 'Polymer Clay Jewellery Care & Cleaning Guide NZ', 'How to clean, store and care for resin and polymer clay earrings in New Zealand: water, makeup removal and cleaning 316L steel posts.' ),
+		'jewellery-care' => array( 'Earring Care & Cleaning Guide NZ', 'How to clean, store and care for resin and polymer clay earrings in New Zealand: water, makeup removal and cleaning 316L steel posts.' ),
 		'orders' => array( 'Order Help', 'Find help with your Orellie order and contact details for order enquiries.' ),
 		'privacy-policy' => array( 'Privacy Policy', 'Read the Orellie privacy policy, including how information is handled when you use the website.' ),
 		'terms-of-use' => array( 'Terms of Use', 'Read the terms of use for the Orellie website and online store.' ),
@@ -73,17 +73,17 @@ function orellie_seo_title_parts( $parts ) {
 	if ( orellie_has_seo_plugin() ) { return $parts; }
 	$help = orellie_help_slug();
 	if ( $help ) { $parts['title'] = orellie_help_metadata()[ $help ][0]; }
-	elseif ( is_front_page() ) { $parts['title'] = 'Handcrafted Polymer Clay Earrings NZ'; }
-	elseif ( function_exists( 'is_shop' ) && is_shop() ) { $parts['title'] = 'Shop Handmade Polymer Clay Earrings NZ'; }
+	elseif ( is_front_page() ) { $parts['title'] = 'Handcrafted Resin & Polymer Clay Earrings NZ'; }
+	elseif ( function_exists( 'is_shop' ) && is_shop() ) { $parts['title'] = 'Shop Handmade Resin & Polymer Clay Earrings NZ'; }
 	elseif ( function_exists( 'is_product_category' ) && is_product_category() ) {
 		$cat = get_queried_object();
 		$cat_slug = $cat ? $cat->slug : '';
 		if ( 'studs' === $cat_slug ) {
-			$parts['title'] = 'Handcrafted Stud Earrings NZ | Lightweight Polymer Clay';
+			$parts['title'] = 'Handcrafted Stud Earrings NZ | Resin & Polymer Clay';
 		} elseif ( 'dangles' === $cat_slug ) {
-			$parts['title'] = 'Handmade Statement Dangles NZ | Polymer Clay Earrings';
+			$parts['title'] = 'Handmade Statement Dangles NZ | Resin & Polymer Clay';
 		} else {
-			$parts['title'] = ( $cat ? $cat->name : 'Earrings' ) . ' | Handcrafted Polymer Clay Jewellery NZ';
+			$parts['title'] = ( $cat ? $cat->name : 'Earrings' ) . ' | Handcrafted Earrings NZ';
 		}
 	}
 	else { return $parts; }
