@@ -57,16 +57,13 @@ orellie-theme/
 
 `orellie.nz` runs this WordPress theme on **Hostinger** — not on Vercel. The Next.js app (`apps/orellie/src/`) is a mirrored frontend on Vercel that is **not the live site**.
 
-After committing changes to the theme files, run the deployment script from the repo root:
+After committing changes to the theme files on main, deploy from the repo root:
 
 ```powershell
-.\apps\orellie\deploy-to-hostinger.ps1
+.\apps\orellie\orsite.ps1 deploy "what changed" --expect "/path=text the page must show"
 ```
 
-This script:
-1. Extracts `apps/orellie/content/` into a temporary git subtree branch
-2. Force-pushes it to `https://github.com/roshan-auto/orellie.git` (the standalone deployment repo)
-3. Hostinger auto-deploys from that repo — the live site updates within seconds
+This pushes website-factory main and runs `orsite.py deploy` on Contabo (the Orellie bot's release script): lint, fast-forward push to `roshan-auto/orellie`, Hostinger pull, live smoke test, automatic rollback on failure. Never force-push `roshan-auto/orellie`. Details: [docs/wordpress-hostinger.md](../../../../../docs/wordpress-hostinger.md).
 
 **Important:** Always update BOTH the WordPress theme files here AND the mirrored Next.js components in `apps/orellie/src/` so they stay in sync.
 
