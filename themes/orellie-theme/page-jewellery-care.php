@@ -15,7 +15,7 @@ get_header(); ?>
     <div class="container">
       <article class="page-content animate-fadeInUp-delay-2">
         <div class="entry-content">
-          <p class="lead">Handcrafted polymer clay earrings are celebrated across New Zealand for their striking sculptural beauty and impossibly featherlight weight. Unlike delicate fine metals or brittle ceramics, high-grade cured polymer clay possesses unique physical properties that make it durable, flexible, and comfortable for daily wear.</p>
+          <p class="lead">Handcrafted polymer clay earrings are celebrated across New Zealand for their striking shapes and light weight. Baked polymer clay is durable, slightly flexible and comfortable for daily wear, and a little care keeps it looking its best.</p>
 
           <p>With just a few simple habits, your Orellie handcrafted earrings will stay vibrant, clean, and structurally sound for a lifetime. Here is your definitive guide to caring for, cleaning, storing, and sanitizing polymer clay jewellery in New Zealand.</p>
 
@@ -66,7 +66,7 @@ get_header(); ?>
           <hr>
 
           <h2>4. Sanitizing 316L Surgical Steel Posts Safely</h2>
-          <p>Orellie mounts every single pair of earrings on certified <strong>316L medical-grade surgical stainless steel</strong>, ensuring complete biocompatibility for sensitive skin. To keep your piercings hygienic and healthy:</p>
+          <p>Every Orellie pair is made with <strong>316L surgical steel posts</strong>, chosen for sensitive ears. To keep your piercings clean and healthy:</p>
           <ul>
             <li><strong>Target the Metal Posts Only:</strong> Dip a cotton swab or pad into 70% isopropyl alcohol and wipe only the surgical steel post and the butterfly scroll.</li>
             <li><strong>Prevent Alcohol Contact with Clay:</strong> Keep the alcohol-dampened swab focused strictly on the metal hardware to protect the clay finish and post adhesive bond.</li>
@@ -116,7 +116,7 @@ get_header(); ?>
 
             <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
               <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How should I sanitize the earring posts for sensitive ears?</h3>
-              <p>Dip a cotton swab in 70% isopropyl alcohol and gently wipe the 316L surgical stainless steel post and butterfly back, taking care not to rub alcohol onto the clay body itself. Allow to air-dry for 30 seconds before wearing.</p>
+              <p>Dip a cotton swab in 70% isopropyl alcohol and gently wipe the 316L surgical steel post and butterfly back, taking care not to rub alcohol onto the clay body itself. Allow to air-dry for 30 seconds before wearing.</p>
             </div>
 
             <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem;">
@@ -128,7 +128,7 @@ get_header(); ?>
           <hr>
 
           <h2>Explore Handcrafted New Zealand Earrings</h2>
-          <p>Discover our lightweight, artisanal collections sculpted by hand in Aotearoa with sensitive-ear surgical steel findings:</p>
+          <p>Discover our lightweight, artisanal collections made by hand in Aotearoa with 316L surgical steel posts chosen for sensitive ears:</p>
 
           <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
             <a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>" class="btn btn-outline">Explore Studs</a>
@@ -176,7 +176,7 @@ get_header(); ?>
       "name": "How should I sanitize the earring posts for sensitive ears?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dip a cotton swab in 70% isopropyl alcohol and gently wipe the 316L surgical stainless steel post and butterfly back, taking care not to rub alcohol onto the clay body itself. Allow to air-dry for 30 seconds before wearing."
+        "text": "Dip a cotton swab in 70% isopropyl alcohol and gently wipe the 316L surgical steel post and butterfly back, taking care not to rub alcohol onto the clay body itself. Allow to air-dry for 30 seconds before wearing."
       }
     },
     {

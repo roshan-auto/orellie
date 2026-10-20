@@ -12,9 +12,9 @@ function orellie_help_metadata() {
 		'privacy-policy' => array( 'Privacy Policy', 'Read the Orellie privacy policy, including how information is handled when you use the website.' ),
 		'terms-of-use' => array( 'Terms of Use', 'Read the terms of use for the Orellie website and online store.' ),
 		'gift-cards' => array( 'Gift Cards', 'Explore Orellie gift cards and read how they can be used in the online store.' ),
-		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'The definitive New Zealand guide to hypoallergenic earrings for sensitive ears. Learn why medical-grade 316L surgical steel and lightweight polymer clay prevent irritation.' ),
-		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Curated gift guide for handcrafted statement earrings in New Zealand. Discover hypoallergenic polymer clay earrings for birthdays, anniversaries, and bridal gifts.' ),
-		'statement-earrings-style-guide' => array( 'Statement Earrings Style Guide NZ | Handcrafted Dangles & Studs', 'Complete guide to styling handcrafted statement earrings in New Zealand. Learn how to match polymer clay dangles to face shapes, outfits, and occasions with 316L surgical steel comfort.' ),
+		'hypoallergenic-earrings-guide' => array( 'Hypoallergenic Earrings Guide NZ', 'A New Zealand guide to hypoallergenic earrings for sensitive ears. Learn why 316L surgical steel posts and lightweight polymer clay are gentler on your ears.' ),
+		'gift-guide-handmade-earrings' => array( 'Gift Guide: Handmade Statement Earrings NZ', 'Curated gift guide for handcrafted statement earrings in New Zealand. Discover polymer clay earrings with 316L surgical steel posts for birthdays, anniversaries, and bridal gifts.' ),
+		'statement-earrings-style-guide' => array( 'Statement Earrings Style Guide NZ | Handcrafted Dangles & Studs', 'Complete guide to styling handcrafted statement earrings in New Zealand. Learn how to match polymer clay dangles to face shapes, outfits, and occasions, all on 316L surgical steel posts.' ),
 	);
 }
 
@@ -48,12 +48,12 @@ function orellie_seo_description() {
 		if ( $term_desc ) { return wp_trim_words( $term_desc, 28, '...' ); }
 		$cat_slug = $term ? $term->slug : '';
 		if ( 'studs' === $cat_slug ) {
-			return 'Shop handcrafted polymer clay stud earrings made in New Zealand. Impossibly lightweight with hypoallergenic 316L surgical steel posts for sensitive ears.';
+			return 'Shop handcrafted polymer clay stud earrings made in New Zealand. Lightweight, with 316L surgical steel posts chosen for sensitive ears.';
 		} elseif ( 'dangles' === $cat_slug ) {
-			return 'Discover handcrafted statement dangle earrings made in New Zealand from lightweight polymer clay (2–5g). Zero earlobe strain with medical-grade 316L surgical steel posts.';
+			return 'Discover handcrafted statement dangle earrings made in New Zealand from lightweight polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
 		}
 		$cat_title = $term ? $term->name : 'Handmade Earrings';
-		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand from lightweight polymer clay. Hypoallergenic 316L surgical steel posts for sensitive ears.';
+		return 'Shop handcrafted ' . esc_attr( strtolower( $cat_title ) ) . ' made in Aotearoa New Zealand from lightweight polymer clay, with 316L surgical steel posts chosen for sensitive ears.';
 	}
 	if ( is_singular() ) {
 		$post = get_queried_object();
@@ -214,13 +214,8 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 	$markup['additionalProperty'] = array(
 		array(
 			'@type' => 'PropertyValue',
-			'name'  => 'Weight',
-			'value' => '2–5g (Featherlight)',
-		),
-		array(
-			'@type' => 'PropertyValue',
 			'name'  => 'Post Material',
-			'value' => '316L Medical Grade Surgical Stainless Steel',
+			'value' => '316L Surgical Steel',
 		),
 		array(
 			'@type' => 'PropertyValue',
@@ -288,10 +283,10 @@ function orellie_single_product_trust_signals() {
 		</h4>
 		<ul style="margin: 0; padding-left: 1.2rem; font-size: 0.875rem; line-height: 1.6; color: #4a4a4a;">
 			<li style="margin-bottom: 0.35rem;"><strong>Handmade in Aotearoa:</strong> Sculpted, baked, and finished by hand in small artisan batches.</li>
-			<li style="margin-bottom: 0.35rem;"><strong>Sensitive Ears Safe:</strong> Medical-grade <strong>316L surgical stainless steel</strong> posts, biocompatible and tarnish-free.</li>
-			<li style="margin-bottom: 0.35rem;"><strong>Featherlight Weight (2&ndash;5g):</strong> All-day statement wear without earlobe drag or pulling.</li>
+			<li style="margin-bottom: 0.35rem;"><strong>For Sensitive Ears:</strong> <strong>316L surgical steel</strong> posts, chosen for sensitive ears.</li>
+			<li style="margin-bottom: 0.35rem;"><strong>Lightweight:</strong> Polymer clay keeps statement pieces comfortable for all-day wear.</li>
 			<li style="margin-bottom: 0.35rem;"><strong>Tracked NZ Shipping:</strong> Nationwide delivery from $6, free on orders over $80.</li>
-			<li><strong>Gift-Ready Presentation:</strong> Delivered in our signature rigid box, perfect for birthdays and celebrations.</li>
+			<li><strong>Gift-Ready Presentation:</strong> Every order comes gift-packaged, perfect for birthdays and celebrations.</li>
 		</ul>
 	</div>
 	<?php

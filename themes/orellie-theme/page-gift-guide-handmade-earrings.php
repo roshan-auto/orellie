@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="entry-content">
       <p class="lead">Finding a gift that feels deeply personal, artful, and memorable shouldn't be difficult. Whether you are shopping for a milestone birthday, an anniversary, bridal party gratitude, Christmas holidays, or a thoughtful surprise for someone special, handcrafted jewellery carries an emotional resonance that mass-produced accessories simply cannot match.</p>
 
-      <p>This gifting guide is designed to help you choose the ideal pair of handcrafted polymer clay earrings from Orellie. Every pair is made in small batches in New Zealand, finished with sensitive-ear surgical steel hardware, and delivered in our signature gift-ready packaging.</p>
+      <p>This gifting guide is designed to help you choose the ideal pair of handcrafted polymer clay earrings from Orellie. Every pair is made in small batches in New Zealand, finished with 316L surgical steel posts chosen for sensitive ears, and gift-packaged.</p>
 
       <hr>
 
@@ -26,8 +26,8 @@ get_header(); ?>
       <ul>
         <li><strong>One-of-a-Kind Artistry:</strong> Because every clay slab is rolled, marbled, cut, baked, sanded, and assembled by hand in New Zealand, no two pairs are ever identical. Your recipient receives a genuine wearable art piece.</li>
         <li><strong>No Sizing Guesswork:</strong> Unlike rings, bracelets, shoes, or clothing, earrings do not require size measurements. You never have to worry about awkward size exchanges.</li>
-        <li><strong>Sensitive-Skin Safe:</strong> Our <strong>316L surgical stainless steel posts</strong> ensure that even loved ones with severe metal sensitivities can wear their gift in complete comfort. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
-        <li><strong>Effortless Weight (2&ndash;5 grams):</strong> Heavy statement earrings get relegated to the back of the jewellery box. Orellie earrings are featherlight, making them an everyday joy to wear. Discover our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
+        <li><strong>Kind to Sensitive Ears:</strong> Our <strong>316L surgical steel posts</strong> are chosen for sensitive ears, so most people can wear their gift comfortably. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
+        <li><strong>Lightweight:</strong> Heavy statement earrings get relegated to the back of the jewellery box. Orellie earrings are lightweight polymer clay, making them an everyday joy to wear. Discover our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
         <li><strong>Direct Nationwide Gifting:</strong> We ship directly to recipient addresses across New Zealand with tracked courier service and complimentary luxury presentation boxes.</li>
       </ul>
 
@@ -53,7 +53,7 @@ get_header(); ?>
       <h3>3. Bridal Parties &amp; Bridesmaid Proposals</h3>
       <p>Thank your bridal party with cohesive yet personalised handmade earrings they will genuinely cherish and wear long after your wedding day. Coordinate tones with your wedding colour scheme, from soft blush and sage to crisp ivory and champagne terrazzo.</p>
       <ul>
-        <li><strong>All-Day Comfort:</strong> Weighing only 2&ndash;5 grams, bridesmaids can wear them comfortably from 8 AM hair and makeup through the ceremony and late-night reception dancing with zero earlobe fatigue.</li>
+        <li><strong>All-Day Comfort:</strong> Lightweight enough that bridesmaids can wear them comfortably from morning hair and makeup through the ceremony and late-night reception dancing.</li>
         <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready to tuck into bridesmaid proposal hampers.</li>
         <li><strong>Custom Coordination:</strong> Looking for a matching palette for 4 or more bridesmaids? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact us</a> for bespoke bridal party suggestions.</li>
       </ul>
@@ -69,14 +69,14 @@ get_header(); ?>
       <h3>5. Secret Santa &amp; Workplace Kris Kringle (Under $35 NZD)</h3>
       <p>Workplace gift exchanges and end-of-year Secret Santa celebrations require thoughtful, high-quality presents within an accessible budget. Handcrafted polymer clay studs provide a boutique, artisan touch that far exceeds high-street fast-fashion novelties.</p>
       <ul>
-        <li><strong>Why It Works:</strong> Universally loved, size-free, and packaged in a sleek gift box ready for the office tree.</li>
+        <li><strong>Why It Works:</strong> Universally loved, size-free, and gift-packaged ready for the office tree.</li>
         <li><strong>Top Occasions:</strong> Corporate Kris Kringle, school teacher appreciation, neighbour gifts, and stocking stuffers.</li>
       </ul>
 
       <h3>6. Mother's Day &amp; Milestone Celebrations</h3>
       <p>Celebrate mothers, grandmothers, and mentors with jewellery that speaks to enduring beauty and patient handcraft. Our botanical and earth-toned textured pieces resonate deeply with women who cherish artisan craft.</p>
       <ul>
-        <li><strong>Why It Works:</strong> Hypoallergenic 316L surgical steel eliminates any worry about aging, thinning earlobe sensitivity.</li>
+        <li><strong>Why It Works:</strong> Lightweight clay on 316L surgical steel posts is gentle on earlobes that have become more sensitive with age.</li>
         <li><strong>Top Occasions:</strong> Mother's Day, retirement milestones, and family reunions.</li>
       </ul>
 
@@ -89,8 +89,8 @@ get_header(); ?>
       <p>We believe the unboxing experience is an integral part of the gift. Every Orellie order includes:</p>
       <ul>
         <li><strong>Rigid Presentation Box:</strong> Protective, eco-conscious gift packaging designed to keep earrings pristine during transit and provide a permanent home on their dresser.</li>
-        <li><strong>Maker's Card &amp; Care Details:</strong> An enclosed artisan card detailing the handmade Aotearoa New Zealand origin, 316L steel specs, and care recommendations.</li>
-        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong> (otherwise from $6 nationwide).</li>
+        <li><strong>Care Advice:</strong> Our <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> explains how to keep each handmade pair looking its best.</li>
+        <li><strong>Tracked NZ Courier:</strong> Fast tracked courier dispatch across New Zealand, with <strong>free shipping on orders over $80 NZD</strong> (otherwise $6 urban, $12 rural).</li>
         <li><strong>Direct Delivery to Recipient:</strong> Simply enter your recipient's address at checkout and add a personalized note in the order notes; we will handwrite your message on a bespoke gift card with zero pricing paperwork.</li>
       </ul>
 
@@ -124,12 +124,12 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What if the person I am gifting has sensitive or easily irritated ears?</h3>
-          <p>All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears.</p>
+          <p>Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. 316L releases very little nickel, so most people wear it comfortably. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How fast does gift delivery take across New Zealand?</h3>
-          <p>Orders are dispatched within 1 to 2 business days via tracked domestic courier. Standard transit times are 1 to 2 business days for North Island metro addresses and 2 to 3 business days for South Island and rural RD addresses.</p>
+          <p>Orders are dispatched within 1 to 2 working days by tracked courier. Delivery usually takes 1 to 3 working days to urban addresses and 3 to 7 working days to rural addresses.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -173,7 +173,7 @@ get_header(); ?>
       "name": "What if the person I am gifting has sensitive or easily irritated ears?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All Orellie earrings feature certified medical-grade 316L surgical stainless steel posts and backs. They are completely hypoallergenic, biocompatible, and nickel-safe, making them safe for sensitive ears."
+        "text": "Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. 316L releases very little nickel, so most people wear it comfortably. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first."
       }
     },
     {
@@ -181,7 +181,7 @@ get_header(); ?>
       "name": "How fast does gift delivery take across New Zealand?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Orders are dispatched within 1 to 2 business days via tracked domestic courier. Standard transit times are 1 to 2 business days for North Island metro addresses and 2 to 3 business days for South Island and rural RD addresses."
+        "text": "Orders are dispatched within 1 to 2 working days by tracked courier. Delivery usually takes 1 to 3 working days to urban addresses and 3 to 7 working days to rural addresses."
       }
     },
     {
