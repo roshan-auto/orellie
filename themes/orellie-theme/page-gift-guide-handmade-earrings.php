@@ -51,7 +51,7 @@ get_header(); ?>
       </ul>
 
       <h3>3. Bridal Parties &amp; Bridesmaid Proposals</h3>
-      <p>Thank your bridal party with cohesive yet personalized handmade earrings they will genuinely cherish and wear long after your wedding day. Coordinate tones with your wedding colour scheme, from soft blush and sage to crisp ivory and champagne terrazzo.</p>
+      <p>Thank your bridal party with cohesive yet personalised handmade earrings they will genuinely cherish and wear long after your wedding day. Coordinate tones with your wedding colour scheme, from soft blush and sage to crisp ivory and champagne terrazzo.</p>
       <ul>
         <li><strong>All-Day Comfort:</strong> Weighing only 2&ndash;5 grams, bridesmaids can wear them comfortably from 8 AM hair and makeup through the ceremony and late-night reception dancing with zero earlobe fatigue.</li>
         <li><strong>Gift Presentation:</strong> Each pair arrives individually boxed, ready to tuck into bridesmaid proposal hampers.</li>
