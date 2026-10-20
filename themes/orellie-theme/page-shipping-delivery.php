@@ -22,24 +22,21 @@ get_header(); ?>
           <p>If there’s ever an unexpected delay, we’ll let you know as soon as possible.</p>
           <hr>
           <h2>Delivery Timeframes</h2>
-          <h3>New Zealand</h3>
+          <p>We currently ship within New Zealand only.</p>
           <ul>
             <li><strong>Urban addresses:</strong> 1–3 working days</li>
             <li><strong>Rural addresses:</strong> 3–7 working days</li>
           </ul>
-          <h3>International</h3>
-          <p>Delivery timeframes vary depending on the destination country and customs processing.</p>
-          <p>All delivery timeframes are estimates only and may occasionally be affected by courier delays, weather events, or customs processing outside of our control.</p>
+          <p>All delivery timeframes are estimates only and may occasionally be affected by courier delays or weather events outside of our control.</p>
           <hr>
           <h2>Shipping Rates</h2>
-          <p>Shipping costs are calculated at checkout before payment is completed.</p>
-          <p>From time to time, we may offer free shipping promotions. Any conditions will be clearly shown on our website.</p>
-          <p>Rural delivery charges may apply where required by the courier network.</p>
-          <hr>
-          <h2>International Orders</h2>
-          <p>We ship to selected international destinations. Availability and shipping rates are shown at checkout.</p>
-          <p>International orders may be subject to customs duties, taxes, or import fees charged by the destination country. These charges are the responsibility of the customer.</p>
-          <p>If a parcel is refused or left unclaimed due to unpaid customs charges, the original shipping cost is non-refundable.</p>
+          <ul>
+            <li><strong>Urban addresses:</strong> $6</li>
+            <li><strong>Rural addresses:</strong> $12</li>
+            <li><strong>Waiheke Island:</strong> $20</li>
+          </ul>
+          <p><strong>Free shipping on all New Zealand orders over $80.</strong></p>
+          <p>Your shipping cost is shown at checkout before payment is completed.</p>
           <hr>
           <h2>Order Tracking</h2>
           <p>Once your order has been shipped, you’ll receive a confirmation email with tracking details.</p>

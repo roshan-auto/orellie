@@ -18,19 +18,19 @@ get_header(); ?>
     <div class="entry-content">
       <p class="lead">Statement earrings have become an essential signature in contemporary New Zealand fashion. From effortless weekend brunches along Ponsonby or Wellington's waterfront to corporate boardrooms and garden weddings, a sculptural, artful pair of earrings has the rare power to transform an entire outfit in seconds.</p>
 
-      <p>Yet many women hesitate to wear statement earrings because traditional high-street options feel uncomfortably heavy, pull at earlobes, or cause allergic itching by mid-afternoon. Handcrafted polymer clay changes everything. Combining featherlight density with bold architectural expression, here is your definitive guide to choosing, styling, and wearing statement earrings in New Zealand.</p>
+      <p>Yet many women hesitate to wear statement earrings because traditional high-street options feel uncomfortably heavy, pull at earlobes, or leave ears itchy by mid-afternoon. Handcrafted polymer clay changes that. Combining a light weight with bold shapes, here is your definitive guide to choosing, styling, and wearing statement earrings in New Zealand.</p>
 
       <hr>
 
       <h2>1. The Polymer Clay Advantage: High Drama Without Earlobe Fatigue</h2>
-      <p>Traditional metal, acrylic, or resin statement earrings often weigh between 15 and 30 grams per pair. Wearing that weight for even a few hours causes continuous mechanical downward drag on your piercing tract, resulting in painful earlobes, micro-tearing, and headache tension.</p>
+      <p>Large metal statement earrings can be heavy. Wearing that weight for a few hours pulls down on your piercing and can leave your earlobes sore.</p>
 
-      <p>By contrast, cured artist-grade polymer clay is <strong>exceptionally lightweight</strong>:</p>
+      <p>By contrast, baked polymer clay is <strong>lightweight</strong>:</p>
       <ul>
-        <li><strong>2 to 5 Grams Average Weight:</strong> An Orellie multi-tiered sculptural dangle weighs roughly the same as a single New Zealand 10-cent coin.</li>
-        <li><strong>Zero Sagging or Distortion:</strong> The earrings sit proudly and flush against your lobe without pulling or distorting the piercing hole.</li>
+        <li><strong>Big Look, Light Feel:</strong> Even a multi-tiered Orellie dangle stays light enough to wear all day.</li>
+        <li><strong>Less Sagging:</strong> Lighter earrings sit better against your lobe and pull less on the piercing.</li>
         <li><strong>True All-Day Wearability:</strong> Put them on at 7:30 AM for work, transition into evening drinks, and forget you are even wearing them until someone compliments your style.</li>
-        <li><strong>Sensitive Ear Guarantee:</strong> Every pair is mounted on certified <strong>316L surgical stainless steel findings</strong>, preventing allergic contact dermatitis. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
+        <li><strong>For Sensitive Ears:</strong> Every pair is made with <strong>316L surgical steel posts</strong>, chosen for sensitive ears. Learn more in our <a href="<?php echo esc_url( home_url( '/hypoallergenic-earrings-guide/' ) ); ?>">Hypoallergenic Earrings Guide</a>.</li>
       </ul>
 
       <hr>
@@ -105,7 +105,7 @@ get_header(); ?>
       <hr>
 
       <h2>5. Safe Storage &amp; Longevity Best Practices</h2>
-      <p>While cured polymer clay has flexible durability, thoughtful care preserves the hand-finished matte texture and surgical steel luster for decades:</p>
+      <p>While cured polymer clay has flexible durability, thoughtful care keeps the hand-finished texture and steel posts looking their best for years:</p>
       <ul>
         <li><strong>Store Flat or Hanging:</strong> Keep your statement dangles on a dedicated jewellery rack or inside their original rigid Orellie presentation box. Avoid tossing them loose into a handbag.</li>
         <li><strong>Moisture &amp; Heat Protection:</strong> Remove earrings before showering, swimming in heated pools, or entering hot springs. Avoid leaving jewellery on sunny car dashboards.</li>
@@ -120,7 +120,7 @@ get_header(); ?>
       <div class="faq-section" style="margin-top: 2rem;">
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">How heavy should statement earrings be for all-day wear?</h3>
-          <p>For comfortable all-day wear without earlobe fatigue, statement earrings should ideally weigh under 7 grams per pair. Orellie statement dangles weigh between 2 and 5 grams, making them virtually imperceptible throughout a full day.</p>
+          <p>Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Orellie dangles are made from lightweight polymer clay, so they stay comfortable from morning to evening.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -164,7 +164,7 @@ get_header(); ?>
       "name": "How heavy should statement earrings be for all-day wear?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For comfortable all-day wear without earlobe fatigue, statement earrings should ideally weigh under 7 grams per pair. Orellie statement dangles weigh between 2 and 5 grams, making them virtually imperceptible throughout a full day."
+        "text": "Lighter is better: the less an earring weighs, the less it pulls on your piercing over a long day. Orellie dangles are made from lightweight polymer clay, so they stay comfortable from morning to evening."
       }
     },
     {

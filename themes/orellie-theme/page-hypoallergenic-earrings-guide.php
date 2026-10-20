@@ -16,76 +16,74 @@ get_header(); ?>
 <div class="container">
   <article class="page-content animate-fadeInUp-delay-2">
     <div class="entry-content">
-      <p class="lead">For many jewellery lovers across New Zealand, finding stylish statement earrings that do not trigger itching, swelling, or redness is an ongoing challenge. Sensitive ears are exceptionally common, yet navigating jewellery descriptions can feel confusing when phrases like "hypoallergenic" are used without clarity.</p>
+      <p class="lead">For many jewellery lovers across New Zealand, finding statement earrings that do not leave ears itchy, red or sore is an ongoing challenge. Sensitive ears are common, and words like "hypoallergenic" are often used without much explanation.</p>
 
-      <p>This comprehensive guide explains what makes earrings truly safe for sensitive ears, why post materials and weight matter, and how Orellie designs lightweight polymer clay earrings tailored for all-day irritation-free comfort.</p>
+      <p>This guide explains what usually causes the reaction, why the post material and the weight of an earring both matter, and how Orellie makes lightweight polymer clay earrings with sensitive ears in mind.</p>
 
       <hr>
 
       <h2>Why Do Ears React to Certain Earrings?</h2>
-      <p>Earlobes have delicate skin that readily absorbs moisture, sweat, and friction. When earring posts contain reactive metals, the body's immune system can develop allergic contact dermatitis.</p>
+      <p>The skin of the earlobe is delicate and is in constant contact with the post. When a post contains a metal your skin is sensitive to, the result can be allergic contact dermatitis: itching, redness, swelling or flaking around the piercing.</p>
 
-      <h3>The Most Common Skin Irritants in Costume Jewellery:</h3>
+      <h3>The Most Common Irritants in Costume Jewellery:</h3>
       <ul>
-        <li><strong>Nickel:</strong> The single most common skin allergen in costume jewellery, frequently alloyed into cheap base metals, brass, and low-grade stainless steels.</li>
-        <li><strong>Copper &amp; Brass:</strong> Highly reactive base alloys that oxidize quickly upon contact with skin oils and sweat, causing characteristic green discoloration and localized burning or itching.</li>
-        <li><strong>Flash-Plated Coatings:</strong> Ultra-thin gold or silver plating that rubs off within weeks of wear, exposing irritating underlying base metals directly against the healing or pierced tract.</li>
+        <li><strong>Nickel:</strong> The most common cause of jewellery allergies. It is often found in cheap base metals and alloys.</li>
+        <li><strong>Copper &amp; Brass:</strong> Base alloys that react with skin oils and sweat and can leave a green mark.</li>
+        <li><strong>Thin Plating:</strong> A thin layer of gold or silver colour can wear off, putting the base metal underneath against your skin.</li>
       </ul>
-      <p>When reactive metal posts leach microscopic ions into the piercing channel, your skin responds with heat, tenderness, redness, and flaking.</p>
 
       <hr>
 
-      <h2>Why 316L Surgical Steel Is the Gold Standard for Sensitive Ears</h2>
-      <p>At Orellie, every single earring post and finding is crafted from certified <strong>316L surgical-grade stainless steel</strong>.</p>
+      <h2>Why Orellie Uses 316L Surgical Steel Posts</h2>
+      <p>Every Orellie pair is made with <strong>316L surgical steel posts</strong>, chosen for sensitive ears.</p>
 
-      <h3>Key Benefits of 316L Surgical Steel:</h3>
+      <h3>What 316L Surgical Steel Offers:</h3>
       <ol>
-        <li><strong>Biocompatible &amp; Medical-Grade:</strong> 316L is the exact grade trusted in medical implants and professional body piercings due to its exceptional purity and bio-stability.</li>
-        <li><strong>Virtually Zero Nickel Release:</strong> While 316L contains tightly bound nickel within its alloy matrix, its high molybdenum (2-3%) and chromium (16-18%) content forms a passive protective oxide barrier that prevents nickel ions from leaching into the skin.</li>
-        <li><strong>Corrosion &amp; Tarnish Resistant in NZ Climates:</strong> Unlike sterling silver which oxidizes and tarnishes rapidly with coastal salt humidity, 316L remains bright, clean, and completely resistant to sweat and moisture across all New Zealand seasons.</li>
-        <li><strong>Standard 20-Gauge (0.8mm) Fitment:</strong> All posts are manufactured to standard 20-gauge thickness, sliding smoothly through standard lobe piercings without stretching or friction trauma.</li>
-        <li><strong>Sturdy &amp; Secure Fitment:</strong> Surgical steel posts do not bend, warp, or snap under gentle pressure, ensuring snug butterfly back fitment so your earrings stay safely positioned.</li>
+        <li><strong>Gentle on most ears:</strong> 316L is a low-carbon stainless steel widely used for earring posts and piercing jewellery, and most people wear it comfortably.</li>
+        <li><strong>Low nickel release:</strong> 316L does contain nickel, but it is bound into the steel and releases very little. Most people with mild sensitivity are fine with it. If you have a diagnosed nickel allergy, check with your doctor, as titanium is the safest choice for strong allergies.</li>
+        <li><strong>Resists rust and tarnish:</strong> Unlike sterling silver, stainless steel does not tarnish black, and it stands up well to sweat and everyday moisture.</li>
+        <li><strong>Strong and durable:</strong> Steel posts hold their shape with normal wear and keep a snug fit with their backs.</li>
       </ol>
 
       <hr>
 
-      <h2>Jewellery Metal Comparison for New Zealand Wearers</h2>
-      <p>Compare how 316L surgical stainless steel performs against other common jewellery metals in humid coastal New Zealand conditions:</p>
+      <h2>Jewellery Metal Comparison for Sensitive Ears</h2>
+      <p>A general guide to how common earring metals compare:</p>
 
       <div style="overflow-x: auto; margin: 2rem 0;">
         <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
           <thead>
             <tr style="background: rgba(0,0,0,0.03); border-bottom: 2px solid var(--border);">
               <th style="padding: 12px; text-align: left;">Metal Type</th>
-              <th style="padding: 12px; text-align: left;">Sensitive Skin Rating</th>
+              <th style="padding: 12px; text-align: left;">Sensitive Ears</th>
               <th style="padding: 12px; text-align: left;">Moisture &amp; Tarnish</th>
-              <th style="padding: 12px; text-align: left;">Structural Durability</th>
+              <th style="padding: 12px; text-align: left;">Durability</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 12px;"><strong>316L Surgical Steel</strong><br><small style="color:var(--muted);">Used on all Orellie pairs</small></td>
-              <td style="padding: 12px; color: #2e7d32;"><strong>Excellent</strong><br>Medical-grade passive barrier</td>
-              <td style="padding: 12px;">100% Tarnish-free &amp; rustproof</td>
-              <td style="padding: 12px;">High strength; posts never warp</td>
+              <td style="padding: 12px;"><strong>316L Surgical Steel</strong><br><small style="color:var(--muted);">Used on Orellie pairs</small></td>
+              <td style="padding: 12px; color: #2e7d32;"><strong>Very good</strong><br>Low nickel release</td>
+              <td style="padding: 12px;">Resists rust and tarnish</td>
+              <td style="padding: 12px;">Strong posts</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
               <td style="padding: 12px;"><strong>925 Sterling Silver</strong></td>
-              <td style="padding: 12px; color: #f57c00;"><strong>Moderate</strong><br>Can react to copper alloy</td>
-              <td style="padding: 12px;">Tarnishes black with sulfur/humidity</td>
-              <td style="padding: 12px;">Soft; posts bend easily</td>
+              <td style="padding: 12px; color: #f57c00;"><strong>Moderate</strong><br>Contains copper</td>
+              <td style="padding: 12px;">Tarnishes over time</td>
+              <td style="padding: 12px;">Softer; posts can bend</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
               <td style="padding: 12px;"><strong>Gold Plated Brass</strong></td>
-              <td style="padding: 12px; color: #d32f2f;"><strong>Poor</strong><br>Severe contact dermatitis trigger</td>
-              <td style="padding: 12px;">Plating wears off; turns skin green</td>
-              <td style="padding: 12px;">Brittle over time</td>
+              <td style="padding: 12px; color: #d32f2f;"><strong>Poor</strong><br>Common irritant once plating wears</td>
+              <td style="padding: 12px;">Plating wears off</td>
+              <td style="padding: 12px;">Wears with use</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 12px;"><strong>Pure Titanium</strong></td>
-              <td style="padding: 12px; color: #2e7d32;"><strong>Excellent</strong><br>Highly biocompatible</td>
-              <td style="padding: 12px;">Tarnish-proof</td>
-              <td style="padding: 12px;">High cost, darker grey tone</td>
+              <td style="padding: 12px;"><strong>Titanium</strong></td>
+              <td style="padding: 12px; color: #2e7d32;"><strong>Excellent</strong><br>Nickel-free</td>
+              <td style="padding: 12px;">Does not tarnish</td>
+              <td style="padding: 12px;">Strong; costs more</td>
             </tr>
           </tbody>
         </table>
@@ -93,31 +91,30 @@ get_header(); ?>
 
       <hr>
 
-      <h2>The Overlooked Factor: Earring Weight and Mechanical Friction</h2>
-      <p>Many wearers assume allergic reactions are solely about metallurgy. However, <strong>mechanical friction and excess weight</strong> play an equally decisive role in earlobe discomfort. Heavy metal, acrylic, or ceramic earrings exert continuous downward drag on the piercing, opening micro-tears that invite soreness, irritation, and bacterial inflammation.</p>
+      <h2>The Overlooked Factor: Earring Weight</h2>
+      <p>Comfort is not only about metal. <strong>Heavy earrings</strong> pull on the piercing all day, which can leave earlobes sore and can stretch the piercing over time.</p>
 
-      <h3>Why Polymer Clay Is the Ultimate Sensitive-Ear Medium:</h3>
+      <h3>Why Polymer Clay Suits Sensitive Ears:</h3>
       <ul>
-        <li><strong>Featherlight Density:</strong> Cured polymer clay is remarkably light. A typical Orellie statement dangle weighs between <strong>2 and 5 grams</strong> &mdash; lighter than a single New Zealand 10-cent coin.</li>
-        <li><strong>Chemically Inert:</strong> High-grade baked polymer clay is completely skin-inert and non-toxic, containing zero heavy metals, latex, or harsh plasticizers.</li>
-        <li><strong>All-Day Wearability:</strong> Because the weight is negligible, there is zero drag pulling the post against the earlobe piercing tract. You can wear expressive, sculptural statement earrings from morning meetings to evening celebrations without fatigue.</li>
+        <li><strong>Lightweight:</strong> Baked polymer clay is light, so even a bold statement dangle sits comfortably.</li>
+        <li><strong>All-day wear:</strong> Less weight means less pull on the piercing, so you can wear expressive earrings from morning to evening.</li>
       </ul>
 
       <hr>
 
-      <h2>Nadee's Story: Handcrafted from Personal Necessity</h2>
-      <p>Orellie was born directly from our maker Nadee's personal struggle with sensitive skin. Frustrated by spending top dollar on plain studs or enduring painful swelling from boutique statement earrings, Nadee began sculpting her own pieces in her New Zealand studio.</p>
-      <p>By marrying artful, slow-crafted polymer clay with certified 316L surgical steel hardware, Orellie offers statement jewellery that sensitive ears can wear with complete peace of mind.</p>
+      <h2>Nadee's Story: Handmade for Sensitive Ears</h2>
+      <p>Orellie's maker, Nadee, has sensitive skin and struggled to wear many beautiful earrings. That is what led her to make her own, handmade in New Zealand with 316L surgical steel posts chosen for sensitive ears.</p>
+      <p>Every pair is still made by hand in small batches, so others with sensitive ears can enjoy statement earrings too.</p>
 
       <hr>
 
-      <h2>Safe Cleaning &amp; Sanitizing Best Practices</h2>
-      <p>Keep your earrings sparkling clean and sanitary without harming the artisan clay finish:</p>
+      <h2>Cleaning Your Earrings Safely</h2>
+      <p>Keep your earrings clean without harming the handmade finish:</p>
       <ul>
-        <li><strong>Sanitize Only the Posts:</strong> Dip a cotton bud in 70% isopropyl alcohol and wipe only the surgical steel post and butterfly scroll. Avoid dousing the polymer clay slab in pure alcohol, which can soften varnish or gold foil.</li>
-        <li><strong>Wipe Clay Gently with Damp Cloth:</strong> Use a soft lint-free cloth dampened with clean water to wipe makeup or dust from clay surfaces.</li>
-        <li><strong>Apply Beauty Products First:</strong> Hair sprays, perfume mists, and sunscreens contain chemical propellants. Always apply beauty products before inserting your earrings.</li>
-        <li><strong>Review Maintenance Tips:</strong> Read our dedicated <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> and our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Styling Guide</a> for more advice.</li>
+        <li><strong>Clean only the posts with alcohol:</strong> Dip a cotton bud in 70% isopropyl alcohol and wipe only the steel post and back. Keep alcohol off the clay, as it can dull the finish or lift gold foil.</li>
+        <li><strong>Wipe the clay with a damp cloth:</strong> A soft cloth dampened with clean water removes makeup and dust.</li>
+        <li><strong>Earrings on last:</strong> Put on hairspray, perfume and sunscreen before your earrings.</li>
+        <li><strong>More care tips:</strong> Read our <a href="<?php echo esc_url( home_url( '/jewellery-care/' ) ); ?>">Jewellery Care Guide</a> and our <a href="<?php echo esc_url( home_url( '/statement-earrings-style-guide/' ) ); ?>">Statement Earrings Style Guide</a>.</li>
       </ul>
 
       <hr>
@@ -127,39 +124,34 @@ get_header(); ?>
       <div class="faq-section" style="margin-top: 2rem;">
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What does 'hypoallergenic earrings' actually mean?</h3>
-          <p>Hypoallergenic means the materials have a significantly reduced likelihood of triggering an allergic skin reaction. In jewellery, it means avoiding reactive base metals like nickel, copper, and unrefined brass, and using biocompatible metals like 316L surgical stainless steel.</p>
+          <p>Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel or titanium instead.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Is 316L surgical steel safe for nickel allergy sufferers?</h3>
-          <p>Yes. 316L surgical stainless steel is formulated with chromium and molybdenum which form a passive, impenetrable oxide layer. This prevents nickel ions from leaching into contact with the skin, which is why it is used in surgical tools and medical implants.</p>
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Is 316L surgical steel OK if I have a nickel allergy?</h3>
+          <p>316L contains nickel but releases very little of it, so most people with mild sensitivity wear it comfortably. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it. Titanium is the safest choice for strong allergies.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Why do heavy earrings make my ears burn or itch?</h3>
-          <p>Excess weight creates continuous physical shear stress on the piercing channel. This mechanical trauma causes micro-tears in delicate lobe tissue, mimicking allergic dermatitis symptoms like burning, throbbing, and redness even if the metal is non-reactive.</p>
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Why do heavy earrings make my ears sore?</h3>
+          <p>A heavy earring pulls on the piercing all day. That strain can leave the earlobe sore and red even when the metal is not the problem, and over time it can stretch the piercing.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What gauge (thickness) are Orellie earring posts?</h3>
-          <p>All Orellie stud and dangle posts are standard 20-gauge (0.8mm) diameter. This is the optimal thickness for comfortable insertion into standard lobe piercings without stretching or friction.</p>
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Will Orellie earrings tarnish in humid weather?</h3>
+          <p>The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the clay and any metal accents.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings in humid coastal New Zealand weather?</h3>
-          <p>Yes. 316L surgical steel is specifically engineered with molybdenum to resist pitting and chloride corrosion from sea spray and humid coastal air, unlike sterling silver or brass which tarnish and corrode.</p>
-        </div>
-
-        <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
-          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings with newly healed piercings?</h3>
-          <p>Yes. Because Orellie earrings weigh only 2 to 5 grams and feature non-corrosive 316L surgical steel, they place minimal strain on freshly healed piercings compared to heavy commercial metal jewellery.</p>
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I wear Orellie earrings in a new piercing?</h3>
+          <p>Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, lightweight earrings with 316L surgical steel posts are a gentle choice.</p>
         </div>
       </div>
 
       <hr>
 
-      <h2>Discover Irritation-Free Handcrafted Jewellery</h2>
-      <p>Ready to wear striking statement pieces that feel like nothing at all? Explore our handcrafted New Zealand collections:</p>
+      <h2>Discover Handcrafted Earrings for Sensitive Ears</h2>
+      <p>Ready to wear statement pieces that stay comfortable? Explore our handcrafted New Zealand collections:</p>
       <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
         <a href="<?php echo esc_url( home_url( '/product-category/studs/' ) ); ?>" class="btn btn-outline">Explore Studs</a>
         <a href="<?php echo esc_url( home_url( '/product-category/dangles/' ) ); ?>" class="btn btn-outline">Explore Dangles</a>
@@ -180,47 +172,39 @@ get_header(); ?>
       "name": "What does 'hypoallergenic earrings' actually mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hypoallergenic means the materials have a significantly reduced likelihood of triggering an allergic skin reaction by avoiding reactive base metals like nickel, copper, and unrefined brass, using biocompatible metals like 316L surgical stainless steel."
+        "text": "Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel or titanium instead."
       }
     },
     {
       "@type": "Question",
-      "name": "Is 316L surgical steel safe for nickel allergy sufferers?",
+      "name": "Is 316L surgical steel OK if I have a nickel allergy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. 316L surgical stainless steel is formulated with chromium and molybdenum which form a passive, impenetrable oxide layer that prevents nickel ions from leaching into contact with the skin."
+        "text": "316L contains nickel but releases very little of it, so most people with mild sensitivity wear it comfortably. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it. Titanium is the safest choice for strong allergies."
       }
     },
     {
       "@type": "Question",
-      "name": "Why do heavy earrings make my ears burn or itch?",
+      "name": "Why do heavy earrings make my ears sore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Excess weight creates continuous physical shear stress on the piercing channel, causing micro-tears in delicate lobe tissue that mimic allergic dermatitis symptoms like burning, throbbing, and redness."
+        "text": "A heavy earring pulls on the piercing all day. That strain can leave the earlobe sore and red even when the metal is not the problem, and over time it can stretch the piercing."
       }
     },
     {
       "@type": "Question",
-      "name": "What gauge (thickness) are Orellie earring posts?",
+      "name": "Will Orellie earrings tarnish in humid weather?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All Orellie stud and dangle posts are standard 20-gauge (0.8mm) diameter. This is the optimal thickness for comfortable insertion into standard lobe piercings without stretching or friction."
+        "text": "The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the clay and any metal accents."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I wear Orellie earrings in humid coastal New Zealand weather?",
+      "name": "Can I wear Orellie earrings in a new piercing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. 316L surgical steel is specifically engineered with molybdenum to resist pitting and chloride corrosion from sea spray and humid coastal air, unlike sterling silver or brass which tarnish and corrode."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I wear Orellie earrings with newly healed piercings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Because Orellie earrings weigh only 2 to 5 grams and feature non-corrosive 316L surgical steel, they place minimal strain on freshly healed piercings compared to heavy commercial metal jewellery."
+        "text": "Wait until your piercing has fully healed and your piercer says it is fine to change earrings. After that, lightweight earrings with 316L surgical steel posts are a gentle choice."
       }
     }
   ]

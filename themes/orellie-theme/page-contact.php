@@ -78,7 +78,7 @@ if ( isset( $_POST['orellie_contact_submit'] ) ) {
                 <div class="info-icon">📍</div>
                 <div>
                     <h4>Studio Location</h4>
-                    <p>Handcrafted in Auckland, New Zealand</p>
+                    <p>Handcrafted in New Zealand</p>
                 </div>
             </div>
             <div class="info-item">

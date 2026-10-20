@@ -22,7 +22,7 @@ if ( ! is_product() ) :
 
 // Short hero copy based on archive context: one line, the grid does the selling.
 $hero_title = 'Wear What You <span class="accent">Feel.</span>';
-$hero_desc  = 'Handcrafted in New Zealand. Featherlight to wear, on 316L surgical steel for sensitive ears.';
+$hero_desc  = 'Handcrafted in New Zealand. Lightweight to wear, with 316L surgical steel posts for sensitive ears.';
 $current    = '';
 
 if ( function_exists( 'is_product_category' ) && is_product_category() ) {
@@ -30,10 +30,10 @@ if ( function_exists( 'is_product_category' ) && is_product_category() ) {
 	$current = $term ? $term->slug : '';
 	if ( 'studs' === $current ) {
 		$hero_title = 'Stud <span class="accent">Earrings</span>';
-		$hero_desc  = 'Featherlight everyday studs on 316L surgical steel posts.';
+		$hero_desc  = 'Lightweight everyday studs on 316L surgical steel posts.';
 	} elseif ( 'dangles' === $current ) {
 		$hero_title = 'Statement <span class="accent">Dangles</span>';
-		$hero_desc  = 'Bold shapes that stay featherlight, on 316L surgical steel.';
+		$hero_desc  = 'Bold shapes that stay lightweight, on 316L surgical steel posts.';
 	} else {
 		$hero_title = esc_html( single_term_title( '', false ) );
 		$term_desc  = trim( wp_strip_all_tags( term_description() ) );
