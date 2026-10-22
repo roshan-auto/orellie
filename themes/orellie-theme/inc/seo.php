@@ -238,9 +238,26 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 	);
 	if ( ! empty( $markup['offers'] ) && is_array( $markup['offers'] ) ) {
 		$next_year = (int) date( 'Y' ) + 1;
+		// Google Merchant listings want validFrom on the offer and its price specs: the product's publish date.
+		$created    = $product->get_date_created();
+		$valid_from = $created ? $created->date( 'c' ) : '';
 		foreach ( $markup['offers'] as $key => $offer ) {
 			$markup['offers'][ $key ]['itemCondition'] = 'https://schema.org/NewCondition';
 			$markup['offers'][ $key ]['priceValidUntil'] = $next_year . '-12-31';
+			if ( $valid_from ) {
+				$markup['offers'][ $key ]['validFrom'] = $valid_from;
+				if ( ! empty( $offer['priceSpecification'] ) && is_array( $offer['priceSpecification'] ) ) {
+					if ( isset( $offer['priceSpecification']['@type'] ) ) {
+						$markup['offers'][ $key ]['priceSpecification']['validFrom'] = $valid_from;
+					} else {
+						foreach ( $offer['priceSpecification'] as $spec_key => $spec ) {
+							if ( is_array( $spec ) ) {
+								$markup['offers'][ $key ]['priceSpecification'][ $spec_key ]['validFrom'] = $valid_from;
+							}
+						}
+					}
+				}
+			}
 			$markup['offers'][ $key ]['seller'] = array(
 				'@type' => 'Organization',
 				'name'  => 'Orellie',
@@ -279,7 +296,8 @@ add_filter( 'woocommerce_structured_data_product', function ( $markup, $product 
 				'returnPolicyCategory' => 'https://schema.org/MerchantReturnFiniteReturnWindow',
 				'merchantReturnDays' => 7,
 				'returnMethod' => 'https://schema.org/ReturnByMail',
-				'returnFees' => 'https://schema.org/CustomerRemorseReturnFees',
+				// Change-of-mind returns: the customer pays return shipping (see the Returns & Exchanges page).
+				'returnFees' => 'https://schema.org/ReturnFeesCustomerResponsibility',
 				'url' => home_url( '/returns-exchanges/' ),
 			);
 		}
