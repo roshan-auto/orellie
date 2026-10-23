@@ -123,7 +123,7 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What if the person I am gifting has sensitive or easily irritated ears?</h3>
-          <p>Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. 316L releases very little nickel, so most people wear it comfortably. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first.</p>
+          <p>Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. DermNet NZ lists hypoallergenic stainless steel among the jewellery that should be safe for people with a nickel allergy, though skin varies. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -133,7 +133,7 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Can I order matching or coordinated earring sets for a bridal party?</h3>
-          <p>Yes. We regularly supply coordinated handmade sets for bridal parties and bridesmaids across New Zealand. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs.</p>
+          <p>Yes. We can make coordinated handmade sets for bridal parties and bridesmaids. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -172,7 +172,7 @@ get_header(); ?>
       "name": "What if the person I am gifting has sensitive or easily irritated ears?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. 316L releases very little nickel, so most people wear it comfortably. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first."
+        "text": "Every Orellie pair has 316L surgical steel posts, chosen for sensitive ears. DermNet NZ lists hypoallergenic stainless steel among the jewellery that should be safe for people with a nickel allergy, though skin varies. If your recipient has a strong nickel allergy, see our Hypoallergenic Earrings Guide first."
       }
     },
     {
@@ -188,7 +188,7 @@ get_header(); ?>
       "name": "Can I order matching or coordinated earring sets for a bridal party?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We regularly supply coordinated handmade sets for bridal parties and bridesmaids across New Zealand. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs."
+        "text": "Yes. We can make coordinated handmade sets for bridal parties and bridesmaids. Reach out via our Contact page with your wedding palette, and we will advise on matching pairs."
       }
     },
     {

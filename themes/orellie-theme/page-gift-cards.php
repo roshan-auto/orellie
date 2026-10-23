@@ -45,15 +45,6 @@ get_header();
                     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-primary">Contact Us to Order</a>
                 </div>
 
-                <div class="implementation-suggestions" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-                    <h4 style="margin-bottom: 1rem; color: var(--foreground);">Pro Implementation Suggestions:</h4>
-                    <p style="font-size: 0.9rem; color: var(--muted-foreground); margin-bottom: 1rem;">To implement fully automated gift cards that generate unique codes and allow checkout redemption, we recommend:</p>
-                    <ul style="font-size: 0.9rem; color: var(--muted-foreground); space-y: 0.5rem; list-style-type: disc; padding-left: 1.5rem;">
-                        <li><strong>WooCommerce Gift Cards (Official)</strong>: The most robust option for creating, selling, and managing gift cards with full balance tracking.</li>
-                        <li><strong>YITH WooCommerce Gift Cards</strong>: A popular alternative with a great free version and a powerful premium version for custom card designs.</li>
-                        <li><strong>PW WooCommerce Gift Cards</strong>: Extremely easy to set up and very reliable for digital delivery.</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>

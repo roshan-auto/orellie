@@ -27,7 +27,7 @@ get_header(); ?>
 
       <h3>The Most Common Irritants in Costume Jewellery:</h3>
       <ul>
-        <li><strong>Nickel:</strong> The most common cause of jewellery allergies. It is often found in cheap base metals and alloys.</li>
+        <li><strong>Nickel:</strong> DermNet NZ describes nickel allergy as one of the most common causes of contact allergic dermatitis, with the earlobes among the most common places it shows up (<a href="https://dermnetnz.org/topics/nickel-allergy" target="_blank" rel="noopener">DermNet: nickel allergy</a>).</li>
         <li><strong>Copper &amp; Brass:</strong> Base alloys that react with skin oils and sweat and can leave a green mark.</li>
         <li><strong>Thin Plating:</strong> A thin layer of gold or silver colour can wear off, putting the base metal underneath against your skin.</li>
       </ul>
@@ -39,51 +39,46 @@ get_header(); ?>
 
       <h3>What 316L Surgical Steel Offers:</h3>
       <ol>
-        <li><strong>Gentle on most ears:</strong> 316L is a low-carbon stainless steel widely used for earring posts and piercing jewellery, and most people wear it comfortably.</li>
-        <li><strong>Low nickel release:</strong> 316L does contain nickel, but it is bound into the steel and releases very little. Most people with mild sensitivity are fine with it. If you have a diagnosed nickel allergy, check with your doctor, as titanium is the safest choice for strong allergies.</li>
-        <li><strong>Resists rust and tarnish:</strong> Unlike sterling silver, stainless steel does not tarnish black, and it stands up well to sweat and everyday moisture.</li>
+        <li><strong>A stainless steel chosen for sensitive ears:</strong> 316L is a low-carbon stainless steel. DermNet NZ lists "hypoallergenic" stainless steel among the jewellery that should be safe for people with a nickel allergy (<a href="https://dermnetnz.org/topics/nickel-allergy" target="_blank" rel="noopener">DermNet: nickel allergy</a>).</li>
+        <li><strong>Not a guarantee:</strong> stainless steel still contains nickel, and everyone's skin is different. If you have a diagnosed nickel allergy, check with your doctor before wearing any new earrings.</li>
+        <li><strong>Resists rust and tarnish:</strong> stainless steel does not tarnish black, and it stands up well to sweat and everyday moisture.</li>
         <li><strong>Strong and durable:</strong> Steel posts hold their shape with normal wear and keep a snug fit with their backs.</li>
       </ol>
 
       <hr>
 
       <h2>Jewellery Metal Comparison for Sensitive Ears</h2>
-      <p>A general guide to how common earring metals compare:</p>
+      <p>A general guide to common earring metals. The notes on nickel come from <a href="https://dermnetnz.org/topics/nickel-allergy" target="_blank" rel="noopener">DermNet NZ's page on nickel allergy</a>.</p>
 
       <div style="overflow-x: auto; margin: 2rem 0;">
         <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
           <thead>
             <tr style="background: rgba(0,0,0,0.03); border-bottom: 2px solid var(--border);">
               <th style="padding: 12px; text-align: left;">Metal Type</th>
-              <th style="padding: 12px; text-align: left;">Sensitive Ears</th>
+              <th style="padding: 12px; text-align: left;">Nickel</th>
               <th style="padding: 12px; text-align: left;">Moisture &amp; Tarnish</th>
-              <th style="padding: 12px; text-align: left;">Durability</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid var(--border);">
               <td style="padding: 12px;"><strong>316L Surgical Steel</strong><br><small style="color:var(--muted);">Used on Orellie pairs</small></td>
-              <td style="padding: 12px; color: #2e7d32;"><strong>Very good</strong><br>Low nickel release</td>
+              <td style="padding: 12px;">DermNet NZ lists "hypoallergenic" stainless steel as jewellery that should be safe</td>
               <td style="padding: 12px;">Resists rust and tarnish</td>
-              <td style="padding: 12px;">Strong posts</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
               <td style="padding: 12px;"><strong>925 Sterling Silver</strong></td>
-              <td style="padding: 12px; color: #f57c00;"><strong>Moderate</strong><br>Contains copper</td>
+              <td style="padding: 12px;">DermNet NZ lists silver jewellery as jewellery that should be safe</td>
               <td style="padding: 12px;">Tarnishes over time</td>
-              <td style="padding: 12px;">Softer; posts can bend</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 12px;"><strong>Gold Plated Brass</strong></td>
-              <td style="padding: 12px; color: #d32f2f;"><strong>Poor</strong><br>Common irritant once plating wears</td>
-              <td style="padding: 12px;">Plating wears off</td>
-              <td style="padding: 12px;">Wears with use</td>
+              <td style="padding: 12px;"><strong>Gold</strong></td>
+              <td style="padding: 12px;">DermNet NZ says solid gold of 12 carat or more should be safe, while nine-carat and white gold contain nickel</td>
+              <td style="padding: 12px;">Varies with the carat</td>
             </tr>
             <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 12px;"><strong>Titanium</strong></td>
-              <td style="padding: 12px; color: #2e7d32;"><strong>Excellent</strong><br>Nickel-free</td>
-              <td style="padding: 12px;">Does not tarnish</td>
-              <td style="padding: 12px;">Strong; costs more</td>
+              <td style="padding: 12px;"><strong>Gold Plated Base Metal</strong></td>
+              <td style="padding: 12px;">Once the plating wears, the base metal underneath touches your skin</td>
+              <td style="padding: 12px;">Plating wears with use</td>
             </tr>
           </tbody>
         </table>
@@ -124,12 +119,12 @@ get_header(); ?>
       <div class="faq-section" style="margin-top: 2rem;">
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">What does 'hypoallergenic earrings' actually mean?</h3>
-          <p>Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel or titanium instead.</p>
+          <p>Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel instead.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Is 316L surgical steel OK if I have a nickel allergy?</h3>
-          <p>316L contains nickel but releases very little of it, so most people with mild sensitivity wear it comfortably. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it. Titanium is the safest choice for strong allergies.</p>
+          <p>DermNet NZ lists "hypoallergenic" stainless steel among the jewellery that should be safe for people with a nickel allergy, but stainless steel does contain nickel and skin varies. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -139,7 +134,7 @@ get_header(); ?>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
           <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Will Orellie earrings tarnish in humid weather?</h3>
-          <p>The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents.</p>
+          <p>The 316L surgical steel posts resist rust and tarnish. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents.</p>
         </div>
 
         <div class="faq-item" style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
@@ -172,7 +167,7 @@ get_header(); ?>
       "name": "What does 'hypoallergenic earrings' actually mean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel or titanium instead."
+        "text": "Hypoallergenic means the earrings are less likely to cause an allergic reaction. It is not a guarantee. In jewellery it usually means avoiding reactive metals like nickel alloys, copper and brass in the parts that touch your skin, and using metals such as 316L surgical steel instead."
       }
     },
     {
@@ -180,7 +175,7 @@ get_header(); ?>
       "name": "Is 316L surgical steel OK if I have a nickel allergy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "316L contains nickel but releases very little of it, so most people with mild sensitivity wear it comfortably. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it. Titanium is the safest choice for strong allergies."
+        "text": "DermNet NZ lists \"hypoallergenic\" stainless steel among the jewellery that should be safe for people with a nickel allergy, but stainless steel does contain nickel and skin varies. If you have a diagnosed or strong nickel allergy, check with your doctor before wearing it."
       }
     },
     {
@@ -196,7 +191,7 @@ get_header(); ?>
       "name": "Will Orellie earrings tarnish in humid weather?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 316L surgical steel posts resist rust and tarnish far better than sterling silver or brass. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents."
+        "text": "The 316L surgical steel posts resist rust and tarnish. Store your earrings dry in their box, and keep them out of pools, hot tubs and the sea to protect the finish and any metal accents."
       }
     },
     {
